@@ -57,7 +57,7 @@
                <children>
                   <ScrollPane fx:id="questionScrollPane" fitToWidth="true" layoutX="26.0" layoutY="78.0" pannable="true" prefHeight="281.0" prefWidth="1009.0">
                      <content>
-                        <Label fx:id="questionLabel" alignment="TOP_LEFT" style="-fx-font-size: 24px;" styleClass="dialogue-text" wrapText="true" />
+                        <Label fx:id="questionLabel" alignment="TOP_LEFT" style="-fx-font-size: 24px;" styleClass="dialogue-text, question-text" wrapText="true" />
                      </content>
                   </ScrollPane>
                </children>
@@ -66,7 +66,7 @@
                   <String fx:value="status-text-style" />
                </styleClass></Pane>
             <Label fx:id="questionHeaderLabel" alignment="CENTER" layoutX="415.0" layoutY="138.0" prefHeight="36.0" prefWidth="440.0" style="-fx-font-size: 20px;" styleClass="speaker-label" text="Question" />
-            <Label fx:id="messageLabel" alignment="CENTER" layoutX="450.0" layoutY="470.0" prefHeight="55.0" prefWidth="1021.0" style="-fx-font-size: 20px;" styleClass="dialogue-text" wrapText="true" />
+            <Label fx:id="messageLabel" alignment="CENTER" layoutX="450.0" layoutY="470.0" prefHeight="55.0" prefWidth="1021.0" style="-fx-font-size: 20px;" styleClass="dialogue-text, question-text" wrapText="true" />
             <Label fx:id="timerLabel" alignment="CENTER_RIGHT" layoutX="790.0" layoutY="120.0" prefHeight="36.0" prefWidth="230.0" style="-fx-font-size: 24px;" styleClass="timer-label" text="" />
             <Pane layoutX="85.0" layoutY="625.0" prefHeight="402.0" prefWidth="320.0" styleClass="toolbox-pane">
                <children>

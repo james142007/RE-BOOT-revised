@@ -31,6 +31,25 @@
     -fx-background-position: center;
     -fx-background-repeat: no-repeat;
 }
+/* ---- question text (paradigm battle) ----
+   The ONE place the paradigm question text colour is defined: change -question-text-color to restyle it.
+   Selectors are written to out-rank '.gameplay-root .label.dialogue-text' and '.dialogue-text'.
+   The dark drop shadow (radius 4, full spread = roughly a 2px outline) keeps it readable over the busy background. */
+.label.question-text,
+.gameplay-root .label.question-text {
+    -question-text-color: #FFEB3B;
+    -question-text-outline: #1A0008;
+    -fx-text-fill: -question-text-color;
+    -fx-effect: dropshadow(one-pass-box, -question-text-outline, 4, 1.0, 0, 0);
+}
+
+/* ---- tutorial battle text (Mimi's panel: dialogue + battle questions) ----
+   Black, no outline. Switched on in TutorialController once the toolbox/battle UI appears. */
+.label.tutorial-battle-text,
+.gameplay-root .label.tutorial-battle-text {
+    -fx-text-fill: #000000;
+}
+
 /* scroll panes (question text, answer choices) sit on the dark background */
 .gameplay-root .scroll-pane {
     -fx-background: transparent;

@@ -107,6 +107,7 @@ public class TutorialController {
 
     // var for the battle state
     private boolean inBattle;
+    private static final String BATTLE_TEXT_STYLE_CLASS = "tutorial-battle-text"; // defined in gameplay.css
     private TutorialBattleController battleController;
     private boolean pasted;
     private int choiceIndex;
@@ -197,11 +198,20 @@ public class TutorialController {
         }
     }
 
+    // Mimi's panel (aiDialogueLabel) shows the dialogue and the battle questions. From the moment the
+    // toolbox/battle UI appears it uses the black text style (see gameplay.css).
+    private void applyBattleTextStyle() {
+        if (!aiDialogueLabel.getStyleClass().contains(BATTLE_TEXT_STYLE_CLASS)) {
+            aiDialogueLabel.getStyleClass().add(BATTLE_TEXT_STYLE_CLASS);
+        }
+    }
+
     // shows the toolbox when triggered
     public void showToolBox(double deltaSeconds) {
         if (!toolBoxShown) {
             toolBoxPane.setVisible(true);
             toolBoxShown = true;
+            applyBattleTextStyle();
         }
         toolBoxTimer += deltaSeconds;
 
