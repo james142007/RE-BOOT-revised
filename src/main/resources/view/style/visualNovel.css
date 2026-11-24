@@ -1,0 +1,117 @@
+
+/* =========================================
+   RE:BOOT — VISUAL NOVEL THEME
+   ========================================= */
+
+.visual-novel-root {
+    -fx-font-family: "Consolas";
+}
+
+/* Main dialogue pane */
+.dialogue-pane {
+    
+    -fx-background-image: url("/assets/novel/DialogFrame.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-width: 0;
+    -fx-padding: 25 35 25 35;
+}
+
+/* Speaker name */
+.speaker-label {
+    -fx-text-fill: #00F5FF;
+    -fx-font-family: "Consolas";
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(
+        gaussian, #FF1744, 5, 0.3, 0, 0
+    );
+}
+
+/* Dialogue text */
+.dialogue-text {
+    -fx-text-fill: #00F5FF;
+    -fx-font-family: "Consolas";
+    -fx-font-size: 20px;
+    -fx-line-spacing: 5px;
+}
+
+/* Continue indicator */
+.continue-label {
+    -fx-text-fill: #00F5FF;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* =========================================
+   CHOICE BUTTONS
+   ========================================= */
+
+.vn-choice-button {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/assets/menu/button.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-width: 0;
+    -fx-padding: 0 20 0 20;
+
+    -fx-text-fill: #00F5FF;
+    -fx-font-family: "Consolas";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+}
+
+.vn-choice-button:hover {
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(
+        gaussian, #00F5FF, 12, 0.5, 0, 0
+    );
+}
+
+.vn-choice-button:pressed {
+    -fx-opacity: 0.8;
+    -fx-translate-y: 2px;
+    -fx-effect: dropshadow(
+        gaussian, #FF1744, 8, 0.5, 0, 0
+    );
+}
+
+.vn-choice-button:disabled {
+    -fx-opacity: 0.45;
+    -fx-effect: none;
+}
+
+/* =========================================
+   CHARACTER NAME / NARRATION
+   ========================================= */
+
+.narration-text {
+    -fx-text-fill: #C9DDE3;
+    -fx-font-style: italic;
+}
+
+.character-name {
+    -fx-text-fill: #00F5FF;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+/* Transparent overlay for dialogue layers */
+.vn-overlay {
+    -fx-background-color: transparent;
+}
+
+/* Optional cyan separator */
+.vn-separator {
+    -fx-background-color: #00F5FF;
+    -fx-pref-height: 2px;
+}

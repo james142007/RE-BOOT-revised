@@ -1,0 +1,29 @@
+{
+  "eraNumber": 2,
+  "name": "Procedural Programming",
+  "narrative": "Temporal drive engaged, and we've landed in the early 1970s at Bell Labs! This is where Dennis Ritchie created the C programming language, largely to help build the Unix operating system. Procedural programming breaks a program into reusable procedures, functions and subroutines that are called one step at a time, and C is the classic example. Dennis has agreed to help us, but the robots found the lab before we did. Scout Bots are sweeping the corridors and Guard Bots are blocking the way to the mainframe. Clear them out, then take down the Kernel Overseer. We need that second component!",
+  "focusParadigm": "PROCEDURAL",
+  "programmer": "Dennis Ritchie",
+  "questionBank": "/questions/era2Questions.json",
+  "enemies": {
+    "easy": [
+      "Scout Bot 1",
+      "Scout Bot 2",
+      "Scout Bot 3",
+      "Scout Bot 4"
+    ],
+    "medium": [
+      "Guard Bot 1",
+      "Guard Bot 2"
+    ],
+    "boss": {
+      "name": "Kernel Overseer",
+      "component": {
+        "id": "component-2",
+        "name": "Magnetic Tape",
+        "description": "A reel of magnetic tape, the rewritable storage that let programs become files you could edit, save, and reuse. Unix and C grew up on this shift, and it still echoes in tools like tar, short for tape archive. This is the second piece of the countermeasure: the idea that a program is not a fixed deck of cards but something stored, changed, and run again.",
+        "iconAssetPath": "/assets/components/era2.png"
+      }
+    }
+  }
+}

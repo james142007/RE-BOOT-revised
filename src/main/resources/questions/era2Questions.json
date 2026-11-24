@@ -1,0 +1,316 @@
+{
+    "questions": [
+        {
+            "number": "E2-T01",
+            "question": "In procedural programming, a program is broken down into reusable, callable blocks of code. Which of the following terms are all used (across various languages) to refer to these blocks?",
+            "choices": [
+                {"choice": "A", "statement": "Objects, classes, and interfaces"},
+                {"choice": "B", "statement": "Procedures, routines, subroutines, methods, and functions"},
+                {"choice": "C", "statement": "Facts, rules, and predicates"},
+                {"choice": "D", "statement": "Threads, processes, and handlers"}
+            ],
+            "answer": "B",
+            "hint": "Different languages use different names for the same reusable idea."
+        },
+        {
+            "number": "E2-T02",
+            "question": "What is the key difference between a compiler and an interpreter when processing a procedural language like C?",
+            "choices": [
+                {"choice": "A", "statement": "A compiler translates the entire source code into machine code before execution, while an interpreter executes code line-by-line at runtime"},
+                {"choice": "B", "statement": "A compiler only works with object-oriented languages, while an interpreter only works with procedural languages"},
+                {"choice": "C", "statement": "A compiler and an interpreter perform the exact same function with no meaningful difference"},
+                {"choice": "D", "statement": "An interpreter produces a standalone executable file, while a compiler does not"}
+            ],
+            "answer": "A",
+            "hint": "One translates everything before the program runs; the other translates as it goes."
+        },
+        {
+            "number": "E2-T03",
+            "question": "The C programming language was developed in the early 1970s at Bell Labs, largely to support the development of which operating system?",
+            "choices": [
+                {"choice": "A", "statement": "Windows"},
+                {"choice": "B", "statement": "macOS"},
+                {"choice": "C", "statement": "MS-DOS"},
+                {"choice": "D", "statement": "Unix"}
+            ],
+            "answer": "D",
+            "hint": "Think of the famous operating system that came out of Bell Labs."
+        },
+        {
+            "number": "E2-T04",
+            "question": "Why do C programmers commonly split a large program's source code into multiple files (e.g., separate .c and header .h files)?",
+            "choices": [
+                {"choice": "A", "statement": "To allow different files to be compiled independently, improving compilation efficiency and organization"},
+                {"choice": "B", "statement": "To make the program run using an interpreter instead of a compiler"},
+                {"choice": "C", "statement": "Because C does not allow more than one function per file"},
+                {"choice": "D", "statement": "To automatically convert the program into an object-oriented structure"}
+            ],
+            "answer": "A",
+            "hint": "Think about compiling pieces separately and keeping a large program organized."
+        },
+        {
+            "number": "E2-T05",
+            "question": "In the Fibonacci program shown, the variables n, first, second, next, and c are declared using which basic C data type?",
+            "choices": [
+                {"choice": "A", "statement": "float"},
+                {"choice": "B", "statement": "char"},
+                {"choice": "C", "statement": "int"},
+                {"choice": "D", "statement": "double"}
+            ],
+            "answer": "C",
+            "hint": "All five variables hold whole numbers."
+        },
+        {
+            "number": "E2-T06",
+            "question": "What is the difference between a variable declaration and a variable definition in C, and what role does the extern keyword play?",
+            "choices": [
+                {"choice": "A", "statement": "A declaration allocates memory and assigns a value; a definition only announces the variable's type; extern deletes a variable"},
+                {"choice": "B", "statement": "A declaration tells the compiler a variable's type and name without necessarily allocating memory; a definition actually allocates storage; extern is used to declare a variable that is defined in another file"},
+                {"choice": "C", "statement": "There is no difference between declaration and definition in C; extern is only used for functions, never variables"},
+                {"choice": "D", "statement": "A definition can only occur inside main(), while a declaration can occur anywhere"}
+            ],
+            "answer": "B",
+            "hint": "One announces a variable's type and name; the other actually reserves storage."
+        },
+        {
+            "number": "E2-T07",
+            "question": "Which statement correctly describes pointers and the address-of operator (&) in C?",
+            "choices": [
+                {"choice": "A", "statement": "The & operator dereferences a pointer to retrieve the value it points to"},
+                {"choice": "B", "statement": "Pointers are exclusive to C and are not related to memory addresses at all"},
+                {"choice": "C", "statement": "Pointers in C cannot be null and must always point to valid memory"},
+                {"choice": "D", "statement": "The & operator retrieves the memory address of a variable, and a pointer is declared using * to store such an address"}
+            ],
+            "answer": "D",
+            "hint": "One symbol gives you an address; the other is used when declaring a variable that stores one."
+        },
+        {
+            "number": "E2-T08",
+            "question": "In the Fibonacci program, the variable c is declared inside main() and used only within the for loop. If another c were declared as a global variable outside main(), what would happen inside the function?",
+            "choices": [
+                {"choice": "A", "statement": "The program would fail to compile due to a naming conflict"},
+                {"choice": "B", "statement": "The global c would automatically overwrite the local c's value permanently"},
+                {"choice": "C", "statement": "The local c would take precedence (shadow) the global c within the scope of main()"},
+                {"choice": "D", "statement": "C does not allow both local and global variables to share the same name under any circumstance"}
+            ],
+            "answer": "C",
+            "hint": "When two variables share a name, the one declared closer to the code wins."
+        },
+        {
+            "number": "E2-T09",
+            "question": "C primarily passes arguments to functions using call-by-value. How can a C function still modify a caller's original variable, effectively simulating call-by-reference?",
+            "choices": [
+                {"choice": "A", "statement": "By passing a pointer to the variable, allowing the function to dereference and modify the original memory location"},
+                {"choice": "B", "statement": "By declaring the function as static"},
+                {"choice": "C", "statement": "By using the extern keyword in the function header"},
+                {"choice": "D", "statement": "C has no way to modify a caller's variable from within a function"}
+            ],
+            "answer": "A",
+            "hint": "Give the function the address of the variable instead of a copy of its value."
+        },
+        {
+            "number": "E2-T10",
+            "question": "The Fibonacci program shown uses an iterative (for loop) approach. If this were rewritten as a recursive function instead, what is a key consideration unique to recursion that iteration does not have?",
+            "choices": [
+                {"choice": "A", "statement": "Recursive functions cannot return a value"},
+                {"choice": "B", "statement": "Each recursive call adds a new frame to the call stack, so deep or unterminated recursion can cause a stack overflow"},
+                {"choice": "C", "statement": "Recursive functions must always be declared using the void return type"},
+                {"choice": "D", "statement": "Recursion eliminates the need for a base case or terminating condition"}
+            ],
+            "answer": "B",
+            "hint": "Every call needs its own space in memory, and that space is limited."
+        },
+        {
+            "number": "E2-P01",
+            "question": "What is the output of this program?\n\n#include <stdio.h>\nint nothing(int a, int b){\n    if (a > b){\n        return a;\n    }else{\n        return b * a;\n    }\n}\nint main(){\n    int a = 5;\n    int b = 3;\n    int num = nothing(3, 5);\n    printf(\"%d\", num);\n    return 0;\n}",
+            "choices": [
+                {"choice": "A", "statement": "3"},
+                {"choice": "B", "statement": "5"},
+                {"choice": "C", "statement": "8"},
+                {"choice": "D", "statement": "15"}
+            ],
+            "answer": "D",
+            "hint": "Check which value goes into a and which into b when the function is called."
+        },
+        {
+            "number": "E2-P02",
+            "question": "What is the output of this program?\n\n#include <stdio.h>\nint countVowels(char str[]) {\n    int count = 0;\n    for (int i = 0; str[i] != '\\0'; i++) {\n        char c = str[i];\n        if (c == 'a' || c == 'e' || c == 'i'\n                || c == 'o' || c == 'u' || c == 'A'\n                || c == 'E' || c == 'I' || c == 'O'\n                || c == 'U') {\n            count++;\n        }\n    }\n    return count;\n}\nint main() {\n    char text[] = \"Procedural\";\n    int total = countVowels(text);\n    printf(\"'%s' has %d vowels.\\n\", text, total);\n    return 0;\n}",
+            "choices": [
+                {"choice": "A", "statement": "4."},
+                {"choice": "B", "statement": "'4' has Procedural vowels."},
+                {"choice": "C", "statement": "'Procedural' has 4 vowels."},
+                {"choice": "D", "statement": "'%s' has %d vowels.\\n"}
+            ],
+            "answer": "C",
+            "hint": "Count the vowels (upper or lower case) in the word, then look at the printf format."
+        },
+        {
+            "number": "E2-P03",
+            "question": "What is the output of this program?\n\n#include <stdio.h>\nvoid fixA(char *ptr) {\n    while (*ptr != '\\0') {\n        if (*ptr == 'a') *ptr = 'A';\n        ptr++;\n    }\n}\nvoid clearText(char *ptr) {\n    while (*ptr != '\\0') {\n        *ptr = '-';\n        ptr++;\n    }\n}\nint main() {\n    char text[] = \"banana\";\n    int choice = 1;\n    if (choice == 1) {\n        fixA(text);\n    } else if (choice == 2) {\n        clearText(text);\n    }\n    printf(\"Result: %s\\n\", text);\n    return 0;\n}",
+            "choices": [
+                {"choice": "A", "statement": "Result: BANANA"},
+                {"choice": "B", "statement": "Result: ------"},
+                {"choice": "C", "statement": "Result: bAnAnA"},
+                {"choice": "D", "statement": "Result: BaNaNa"}
+            ],
+            "answer": "C",
+            "hint": "Only the letter 'a' changes, and the value of choice decides which function runs."
+        },
+        {
+            "number": "E2-P04",
+            "question": "What is the output of this program?\n\n#include <stdio.h>\nvoid update(int x) {\n    x = x + 5;\n}\nint main(void) {\n    int num = 10;\n    update(num);\n    printf(\"%d\\n\", num);\n    return 0;\n}",
+            "choices": [
+                {"choice": "A", "statement": "15"},
+                {"choice": "B", "statement": "5"},
+                {"choice": "C", "statement": "10"},
+                {"choice": "D", "statement": "0"}
+            ],
+            "answer": "C",
+            "hint": "x is only a copy. What happens to num back in main?"
+        },
+        {
+            "number": "E2-P05",
+            "question": "What is the output of this program?\n\n#include <stdio.h>\nint main(void) {\n    int sum = 0;\n    for (int i = 1; i <= 4; i++) {\n        sum += i * 2;\n    }\n    printf(\"%d\\n\", sum);\n    return 0;\n}",
+            "choices": [
+                {"choice": "A", "statement": "10"},
+                {"choice": "B", "statement": "20"},
+                {"choice": "C", "statement": "16"},
+                {"choice": "D", "statement": "12"}
+            ],
+            "answer": "B",
+            "hint": "Add i * 2 for i = 1 up to 4."
+        },
+        {
+            "number": "E2-P06",
+            "question": "What is the output of this program?\n\n#include <stdio.h>\nint main(void) {\n    int numbers[] = {2, 4, 6, 8};\n    int result = 0;\n    for (int i = 0; i < 4; i++) {\n        if (numbers[i] > 4) {\n            result += numbers[i];\n        }\n    }\n    printf(\"%d\\n\", result);\n    return 0;\n}",
+            "choices": [
+                {"choice": "A", "statement": "18"},
+                {"choice": "B", "statement": "14"},
+                {"choice": "C", "statement": "20"},
+                {"choice": "D", "statement": "10"}
+            ],
+            "answer": "B",
+            "hint": "Only the numbers greater than 4 get added."
+        },
+        {
+            "number": "E2-P07",
+            "question": "Which program produces the following output?\n\nExpected output:\nHello, World!",
+            "choices": [
+                {"choice": "A", "statement": "#include <stdio.h>\nint main(void) {\n    printf(\"Hello, World!\\n\");\n    return 0;\n}"},
+                {"choice": "B", "statement": "#include <stdio.h>\nint main(void) {\n    printf(Hello, World!);\n    return 0;\n}"},
+                {"choice": "C", "statement": "#include <stdio.h>\nint main(void) {\n    printf(\"World!\");\n    return 1;\n}"},
+                {"choice": "D", "statement": "#include <stdio.h>\nint main(void) {\n    scanf(\"Hello, World!\\n\");\n    return 0;\n}"}
+            ],
+            "answer": "A",
+            "hint": "Check the quotes, the exact text, and which function prints."
+        },
+        {
+            "number": "E2-P08",
+            "question": "Which program produces the following output?\n\nExpected output:\n15",
+            "choices": [
+                {"choice": "A", "statement": "#include <stdio.h>\nvoid addFive(int x) {\n    x += 5;\n}\nint main(void) {\n    int n = 10;\n    addFive(n);\n    printf(\"%d\\n\", n);\n    return 0;\n}"},
+                {"choice": "B", "statement": "#include <stdio.h>\nint addFive(int x) {\n    return x + 5;\n}\nint main(void) {\n    int n = 10;\n    n = addFive(n);\n    printf(\"%d\\n\", n);\n    return 0;\n}"},
+                {"choice": "C", "statement": "#include <stdio.h>\nint main(void) {\n    int n = 10;\n    printf(\"%d\\n\", n + 4);\n    return 0;\n}"},
+                {"choice": "D", "statement": "#include <stdio.h>\nint main(void) {\n    int n = 15;\n    printf(\"%d\\n\", n - 5);\n    return 0;\n}"}
+            ],
+            "answer": "B",
+            "hint": "x is passed by value, so the new value has to come back another way."
+        },
+        {
+            "number": "E2-P09",
+            "question": "Which program produces the following output?\n\nExpected output:\n1 3 5 7 9",
+            "choices": [
+                {"choice": "A", "statement": "#include <stdio.h>\nint main(void) {\n    for (int i = 1; i <= 9; i += 2)\n        printf(\"%d \", i);\n    return 0;\n}"},
+                {"choice": "B", "statement": "#include <stdio.h>\nint main(void) {\n    for (int i = 1; i < 9; i += 2)\n        printf(\"%d \", i);\n    return 0;\n}"},
+                {"choice": "C", "statement": "#include <stdio.h>\nint main(void) {\n    for (int i = 1; i <= 11; i += 2)\n        printf(\"%d \", i);\n    return 0;\n}"},
+                {"choice": "D", "statement": "#include <stdio.h>\nint main(void) {\n    for (int i = 0; i <= 9; i += 2)\n        printf(\"%d \", i);\n    return 0;\n}"}
+            ],
+            "answer": "A",
+            "hint": "It starts at 1, steps by 2, and must reach 9 without going past it."
+        },
+        {
+            "number": "E2-P10",
+            "question": "Which program produces the following output?\n\nExpected output:\n25",
+            "choices": [
+                {"choice": "A", "statement": "#include <stdio.h>\nint square(int x) {\n    return x + x;\n}\nint main(void) {\n    printf(\"%d\\n\", square(5));\n    return 0;\n}"},
+                {"choice": "B", "statement": "#include <stdio.h>\nint square(int x) {\n    return x * x;\n}\nint main(void) {\n    printf(\"%d\\n\", square(5));\n    return 0;\n}"},
+                {"choice": "C", "statement": "#include <stdio.h>\nint square(int x) {\n    return x * 2;\n}\nint main(void) {\n    printf(\"%d\\n\", square(5));\n    return 0;\n}"},
+                {"choice": "D", "statement": "#include <stdio.h>\nint square(int x) {\n    return x * x * x;\n}\nint main(void) {\n    printf(\"%d\\n\", square(5));\n    return 0;\n}"}
+            ],
+            "answer": "B",
+            "hint": "25 is 5 squared."
+        },
+        {
+            "number": "E2-P11",
+            "question": "Which program produces the following output?\n\nExpected output:\nEven",
+            "choices": [
+                {"choice": "A", "statement": "#include <stdio.h>\nint main(void) {\n    int n = 8;\n    if (n % 2 == 0)\n        printf(\"Even\\n\");\n    else\n        printf(\"Odd\\n\");\n    return 0;\n}"},
+                {"choice": "B", "statement": "#include <stdio.h>\nint main(void) {\n    int n = 8;\n    if (n % 2 != 0)\n        printf(\"Even\\n\");\n    else\n        printf(\"Odd\\n\");\n    return 0;\n}"},
+                {"choice": "C", "statement": "#include <stdio.h>\nint main(void) {\n    int n = 7;\n    if (n % 2 == 0)\n        printf(\"Even\\n\");\n    else\n        printf(\"Odd\\n\");\n    return 0;\n}"},
+                {"choice": "D", "statement": "#include <stdio.h>\nint main(void) {\n    int n = 8;\n    if (n / 2 == 0)\n        printf(\"Even\\n\");\n    else\n        printf(\"Odd\\n\");\n    return 0;\n}"}
+            ],
+            "answer": "A",
+            "hint": "Even numbers leave no remainder when divided by 2."
+        },
+        {
+            "number": "E2-P12",
+            "question": "Fill in the blank so that the program produces the expected output.\n\nExpected output:\nSum: 15\n\n#include <stdio.h>\nint main(void) {\n    int a = 7;\n    int b = 8;\n    __________\n    return 0;\n}",
+            "choices": [
+                {"choice": "A", "statement": "printf(\"Sum: %d\\n\", a - b);"},
+                {"choice": "B", "statement": "printf(\"Sum: %d\\n\", a + b);"},
+                {"choice": "C", "statement": "printf(\"Sum: %d\\n\", a * b);"},
+                {"choice": "D", "statement": "printf(\"Sum: %d\\n\", a / b);"}
+            ],
+            "answer": "B",
+            "hint": "Sum means adding the two variables."
+        },
+        {
+            "number": "E2-P13",
+            "question": "Fill in the blank so that the program produces the expected output.\n\nExpected output:\n36\n\n#include <stdio.h>\nint square(int n) {\n    __________\n}\nint main(void) {\n    printf(\"%d\\n\", square(6));\n    return 0;\n}",
+            "choices": [
+                {"choice": "A", "statement": "return n + n;"},
+                {"choice": "B", "statement": "return n * 2;"},
+                {"choice": "C", "statement": "return n * n;"},
+                {"choice": "D", "statement": "return n + 1;"}
+            ],
+            "answer": "C",
+            "hint": "36 is 6 squared: multiply n by itself."
+        },
+        {
+            "number": "E2-P14",
+            "question": "Fill in the blank so that the program produces the expected output.\n\nExpected output:\n1 2 3 4 5\n\n#include <stdio.h>\nint main(void) {\n    for (int i = 1; __________; i++) {\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+            "choices": [
+                {"choice": "A", "statement": "i < 5"},
+                {"choice": "B", "statement": "i <= 5"},
+                {"choice": "C", "statement": "i > 5"},
+                {"choice": "D", "statement": "i == 5"}
+            ],
+            "answer": "B",
+            "hint": "The loop still has to run when i is 5."
+        },
+        {
+            "number": "E2-P15",
+            "question": "Fill in the blank so that the program produces the expected output.\n\nExpected output:\n20 10\n\n#include <stdio.h>\nint main(void) {\n    int a = 10;\n    int b = 20;\n    int temp;\n    temp = a;\n    a = b;\n    __________\n    printf(\"%d %d\\n\", a, b);\n    return 0;\n}",
+            "choices": [
+                {"choice": "A", "statement": "b = a;"},
+                {"choice": "B", "statement": "a = temp;"},
+                {"choice": "C", "statement": "b = temp;"},
+                {"choice": "D", "statement": "temp = b;"}
+            ],
+            "answer": "C",
+            "hint": "a already took b's value, so b needs the old a, which was saved in temp."
+        },
+        {
+            "number": "E2-P16",
+            "question": "Fill in the blank so that the program produces the expected output.\n\nExpected output:\n25\n\n#include <stdio.h>\nint squareSum(int a, int b) {\n    __________\n}\nint main(void) {\n    printf(\"%d\\n\", squareSum(3, 4));\n    return 0;\n}",
+            "choices": [
+                {"choice": "A", "statement": "return a * a + b * b;"},
+                {"choice": "B", "statement": "return (a + b) * 2;"},
+                {"choice": "C", "statement": "return a * b;"},
+                {"choice": "D", "statement": "return a + b * b;"}
+            ],
+            "answer": "A",
+            "hint": "3 squared plus 4 squared is 25."
+        }
+    ]
+}

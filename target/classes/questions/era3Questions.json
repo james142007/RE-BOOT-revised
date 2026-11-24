@@ -1,0 +1,316 @@
+{
+    "questions": [
+        {
+            "number": "E3-T01",
+            "question": "According to the text, what is the defining requirement for a function to be considered \"pure\" in functional programming?",
+            "choices": [
+                {"choice": "A", "statement": "It must use loops instead of recursion"},
+                {"choice": "B", "statement": "Its output value must depend only on the arguments that are input, so calling it twice with the same argument always produces the same result"},
+                {"choice": "C", "statement": "It must modify a global variable to track its state"},
+                {"choice": "D", "statement": "It must be written using object-oriented syntax"}
+            ],
+            "answer": "B",
+            "hint": "Same input, same output, every time."
+        },
+        {
+            "number": "E3-T02",
+            "question": "Functional programming's theoretical roots trace back to a formal system developed in the 1930s by Alonzo Church. What is this system called?",
+            "choices": [
+                {"choice": "A", "statement": "Turing machine"},
+                {"choice": "B", "statement": "Lambda calculus"},
+                {"choice": "C", "statement": "Relational algebra"},
+                {"choice": "D", "statement": "Finite automaton"}
+            ],
+            "answer": "B",
+            "hint": "A formal system by Alonzo Church, named after a Greek letter."
+        },
+        {
+            "number": "E3-T03",
+            "question": "In mathematics, a function f is described as being defined \"over\" two sets. What are these two sets called, and which one contains the function's actual, guaranteed possible outputs plus any extra elements?",
+            "choices": [
+                {"choice": "A", "statement": "Domain and range; the range is the extra-elements set"},
+                {"choice": "B", "statement": "Domain and codomain; the codomain is the set that contains the outputs plus possibly additional elements"},
+                {"choice": "C", "statement": "Argument and image; the argument set contains extra elements"},
+                {"choice": "D", "statement": "Input and graph; the graph contains extra elements"}
+            ],
+            "answer": "B",
+            "hint": "One set holds the inputs; the other holds the outputs and possibly more."
+        },
+        {
+            "number": "E3-T04",
+            "question": "A function is described in the text as \"bijective\" when it satisfies which condition?",
+            "choices": [
+                {"choice": "A", "statement": "It is neither injective nor surjective"},
+                {"choice": "B", "statement": "It is injective (one-to-one) only"},
+                {"choice": "C", "statement": "It is both injective (one-to-one) and surjective (onto)"},
+                {"choice": "D", "statement": "It has no inverse function"}
+            ],
+            "answer": "C",
+            "hint": "It has both properties at once: no repeats and nothing left out."
+        },
+        {
+            "number": "E3-T05",
+            "question": "In lambda calculus, what determines whether an occurrence of a variable within an expression is considered \"bound\" versus \"free\"?",
+            "choices": [
+                {"choice": "A", "statement": "A bound variable is one that is not declared anywhere in the expression, while a free variable is declared"},
+                {"choice": "B", "statement": "A bound variable appears within the scope of a lambda abstraction (binding operator) for that variable; a free variable is not declared/bound in the expression"},
+                {"choice": "C", "statement": "Bound and free refer only to whether the variable is capitalized"},
+                {"choice": "D", "statement": "There is no distinction between bound and free variables in lambda calculus"}
+            ],
+            "answer": "B",
+            "hint": "Look at whether the variable sits inside the scope of a lambda that names it."
+        },
+        {
+            "number": "E3-T06",
+            "question": "What does the concept of \"confluence\" guarantee about lambda calculus reduction, according to the text?",
+            "choices": [
+                {"choice": "A", "statement": "Every expression can be reduced to multiple different normal forms depending on evaluation order"},
+                {"choice": "B", "statement": "If an expression can be reduced to a normal form, that normal form is unique, regardless of the order in which subexpressions are evaluated"},
+                {"choice": "C", "statement": "Expressions can never reach a normal form"},
+                {"choice": "D", "statement": "Confluence only applies to imperative programming languages"}
+            ],
+            "answer": "B",
+            "hint": "The order of evaluation should not change the final result."
+        },
+        {
+            "number": "E3-T07",
+            "question": "In Java, the final keyword is used with primitive type variables. Based on the text's example, what exactly does final accomplish?",
+            "choices": [
+                {"choice": "A", "statement": "It makes the object referenced by the variable fully immutable, including all of its internal fields"},
+                {"choice": "B", "statement": "It prevents the variable itself from being reassigned after it is defined, but for reference types it only prevents reassignment of the reference, not changes to the object's internal state"},
+                {"choice": "C", "statement": "It converts the variable into a global variable automatically"},
+                {"choice": "D", "statement": "It has no effect on primitive types, only on objects"}
+            ],
+            "answer": "B",
+            "hint": "final locks the variable itself, not necessarily everything it points to."
+        },
+        {
+            "number": "E3-T08",
+            "question": "What is a \"closure,\" and how does it differ from an ordinary lambda function according to the text?",
+            "choices": [
+                {"choice": "A", "statement": "A closure is identical to a lambda; there is no difference"},
+                {"choice": "B", "statement": "A closure is a function that can only be called once, while a lambda can be called many times"},
+                {"choice": "C", "statement": "A closure references variables from outside its own scope (non-local variables) and must persist a representation of its lexical environment so those variables remain accessible even after the enclosing function returns"},
+                {"choice": "D", "statement": "A closure can never take any parameters, unlike a lambda"}
+            ],
+            "answer": "C",
+            "hint": "A closure carries its surrounding environment along with it."
+        },
+        {
+            "number": "E3-T09",
+            "question": "What is \"currying,\" as described in the text's C# and F# examples?",
+            "choices": [
+                {"choice": "A", "statement": "A technique for converting a function that accepts multiple parameters into a sequence of functions, each accepting only one parameter and returning the next function in the sequence"},
+                {"choice": "B", "statement": "A method for removing all parameters from a function"},
+                {"choice": "C", "statement": "A way to make a function execute in parallel across multiple threads"},
+                {"choice": "D", "statement": "A technique exclusive to object-oriented programming that has no relation to functional programming"}
+            ],
+            "answer": "A",
+            "hint": "One function with many parameters becomes a chain of one-parameter functions."
+        },
+        {
+            "number": "E3-T10",
+            "question": "Why does the text emphasize that recursive functions should be written to be \"tail recursive,\" using an accumulator argument (as in the tailpow example)?",
+            "choices": [
+                {"choice": "A", "statement": "Tail recursion has no practical benefit and is purely a stylistic choice"},
+                {"choice": "B", "statement": "Without tail recursion, the function cannot return any value at all"},
+                {"choice": "C", "statement": "Tail call elimination allows the stack to be reused (no need to remember the calling location), preventing the call stack from being exhausted on large inputs, since a non-tail-recursive call must still perform work after the recursive call returns"},
+                {"choice": "D", "statement": "Tail recursion converts the function into an iterative loop automatically in every language"}
+            ],
+            "answer": "C",
+            "hint": "When the recursive call is the very last thing done, the stack can be reused."
+        },
+        {
+            "number": "E3-P01",
+            "question": "What is the output of this program?\n\nmain :: IO ()\nmain = do\n    print (someFunc 5)\n\nsomeFunc :: Int -> Int\nsomeFunc x\n  | x <= 1 = 1\n  | otherwise = x * someFunc (x - 1)",
+            "choices": [
+                {"choice": "A", "statement": "250"},
+                {"choice": "B", "statement": "4"},
+                {"choice": "C", "statement": "120"},
+                {"choice": "D", "statement": "1"}
+            ],
+            "answer": "C",
+            "hint": "someFunc is a factorial."
+        },
+        {
+            "number": "E3-P02",
+            "question": "What is the output of this program?\n\nmain :: IO ()\nmain = do\n    print (someFunc 3)\n\nsomeFunc :: Int -> Int\nsomeFunc 1 = 1\nsomeFunc n = 2 * someFunc (n - 1) + 1",
+            "choices": [
+                {"choice": "A", "statement": "3"},
+                {"choice": "B", "statement": "7"},
+                {"choice": "C", "statement": "5"},
+                {"choice": "D", "statement": "1"}
+            ],
+            "answer": "B",
+            "hint": "Unroll it: someFunc 1, then someFunc 2, then someFunc 3."
+        },
+        {
+            "number": "E3-P03",
+            "question": "What is the output of this program?\n\nmain :: IO ()\nmain = print (takeWhile (< 40) (map (^2) [1..]))",
+            "choices": [
+                {"choice": "A", "statement": "[1,4,9,16,25]"},
+                {"choice": "B", "statement": "[1,4,9,16,25,36,49]"},
+                {"choice": "C", "statement": "[4,9,16,25,36]"},
+                {"choice": "D", "statement": "[1,4,9,16,25,36]"}
+            ],
+            "answer": "D",
+            "hint": "map squares the infinite list; takeWhile stops once a square reaches 40."
+        },
+        {
+            "number": "E3-P04",
+            "question": "What is the output of this program?\n\nadd :: Int -> Int -> Int\nadd x y = x + y\n\nmain :: IO ()\nmain = do\n    let f = add 3\n        g = (* 2) . f\n    print (g 4)",
+            "choices": [
+                {"choice": "A", "statement": "11"},
+                {"choice": "B", "statement": "14"},
+                {"choice": "C", "statement": "10"},
+                {"choice": "D", "statement": "7"}
+            ],
+            "answer": "B",
+            "hint": "g applies f (add 3) first and then multiplies by 2."
+        },
+        {
+            "number": "E3-P05",
+            "question": "What is the output of this program?\n\nmain :: IO ()\nmain = do\n    let xs = [1..5]\n    print (sum xs * 2)",
+            "choices": [
+                {"choice": "A", "statement": "15"},
+                {"choice": "B", "statement": "20"},
+                {"choice": "C", "statement": "30"},
+                {"choice": "D", "statement": "10"}
+            ],
+            "answer": "C",
+            "hint": "Add up 1 to 5, then double it."
+        },
+        {
+            "number": "E3-P06",
+            "question": "Which program produces the following output?\n\nExpected output:\n[4,16]",
+            "choices": [
+                {"choice": "A", "statement": "main :: IO ()\nmain = print (map (^2) (filter even [1..5]))"},
+                {"choice": "B", "statement": "main :: IO ()\nmain = print (map (^2) (filter odd [1..5]))"},
+                {"choice": "C", "statement": "main :: IO ()\nmain = print (map (^2) (filter even [1..6]))"},
+                {"choice": "D", "statement": "main :: IO ()\nmain = print (map (*2) (filter even [1..5]))"}
+            ],
+            "answer": "A",
+            "hint": "Evens only, then squared."
+        },
+        {
+            "number": "E3-P07",
+            "question": "Which program produces the following output?\n\nExpected output:\n24",
+            "choices": [
+                {"choice": "A", "statement": "main :: IO ()\nmain = print (foldr (*) 1 [1..4])"},
+                {"choice": "B", "statement": "main :: IO ()\nmain = print (foldr (+) 0 [1..4])"},
+                {"choice": "C", "statement": "main :: IO ()\nmain = print (foldr (*) 0 [1..4])"},
+                {"choice": "D", "statement": "main :: IO ()\nmain = print (foldr (*) 1 [1..5])"}
+            ],
+            "answer": "A",
+            "hint": "24 is 4!. Try foldr (*) 1."
+        },
+        {
+            "number": "E3-P08",
+            "question": "Which program produces the following output?\n\nExpected output:\n[1,2,3]",
+            "choices": [
+                {"choice": "A", "statement": "main :: IO ()\nmain = print (take 3 (iterate (+1) 0))"},
+                {"choice": "B", "statement": "main :: IO ()\nmain = print (take 3 (iterate (+1) 1))"},
+                {"choice": "C", "statement": "main :: IO ()\nmain = print (take 3 (iterate (*2) 1))"},
+                {"choice": "D", "statement": "main :: IO ()\nmain = print (takeWhile (< 3) (iterate (+1) 1))"}
+            ],
+            "answer": "B",
+            "hint": "iterate adds 1 each time. Where does the list start?"
+        },
+        {
+            "number": "E3-P09",
+            "question": "Which program produces the following output?\n\nExpected output:\n55",
+            "choices": [
+                {"choice": "A", "statement": "main :: IO ()\nmain = print (sum [x * x | x <- [1..5]])"},
+                {"choice": "B", "statement": "main :: IO ()\nmain = print (sum [x | x <- [1..5]])"},
+                {"choice": "C", "statement": "main :: IO ()\nmain = print (sum [x * x | x <- [1..4]])"},
+                {"choice": "D", "statement": "main :: IO ()\nmain = print (product [x * x | x <- [1..5]])"}
+            ],
+            "answer": "A",
+            "hint": "1 + 4 + 9 + 16 + 25."
+        },
+        {
+            "number": "E3-P10",
+            "question": "Which program produces the following output?\n\nExpected output:\n10",
+            "choices": [
+                {"choice": "A", "statement": "main :: IO ()\nmain = print (go 0 1)\n  where\n    go acc i\n      | i > 4 = acc\n      | otherwise = go (acc + i) (i + 1)"},
+                {"choice": "B", "statement": "main :: IO ()\nmain = print (go 0 1)\n  where\n    go acc i\n      | i > 5 = acc\n      | otherwise = go (acc + i) (i + 1)"},
+                {"choice": "C", "statement": "main :: IO ()\nmain = print (go 0 1)\n  where\n    go acc i\n      | i > 4 = acc\n      | otherwise = go (acc + i) i"},
+                {"choice": "D", "statement": "main :: IO ()\nmain = print (go 0 1)\n  where\n    go acc i\n      | i >= 4 = acc\n      | otherwise = go (acc + i) (i + 1)"}
+            ],
+            "answer": "A",
+            "hint": "The accumulator adds the numbers 1 through 4."
+        },
+        {
+            "number": "E3-P11",
+            "question": "Which function completes the map call?\n\nExpected output:\n[2,4,6]\n\nmain :: IO ()\nmain = print (map __________ [1, 2, 3])",
+            "choices": [
+                {"choice": "A", "statement": "(+ 2)"},
+                {"choice": "B", "statement": "(^ 2)"},
+                {"choice": "C", "statement": "(* 2)"},
+                {"choice": "D", "statement": "(2 -)"}
+            ],
+            "answer": "C",
+            "hint": "map applies the function to every element: [1,2,3] becomes [2,4,6]."
+        },
+        {
+            "number": "E3-P12",
+            "question": "Which expression completes the lambda passed to foldl?\n\nExpected output:\n30\n\nmain :: IO ()\nmain = print (foldl (\\acc x -> __________) 0 [1, 2, 3, 4])",
+            "choices": [
+                {"choice": "A", "statement": "acc + x"},
+                {"choice": "B", "statement": "acc + x * x"},
+                {"choice": "C", "statement": "x * x"},
+                {"choice": "D", "statement": "acc * x + x"}
+            ],
+            "answer": "B",
+            "hint": "The result is a running sum of squares: 1 + 4 + 9 + 16."
+        },
+        {
+            "number": "E3-P13",
+            "question": "Which expression completes the function composition helper?\n\nExpected output:\n11\n\ncompose f g x = __________\n\nmain :: IO ()\nmain = print (compose (+ 1) (* 2) 5)",
+            "choices": [
+                {"choice": "A", "statement": "g (f x)"},
+                {"choice": "B", "statement": "f (g x)"},
+                {"choice": "C", "statement": "f x + g x"},
+                {"choice": "D", "statement": "f (g (g x))"}
+            ],
+            "answer": "B",
+            "hint": "compose f g x applies g first, then f."
+        },
+        {
+            "number": "E3-P14",
+            "question": "What is the output of this program?\n\n#include <stdio.h>\n//pure function\nint some_function(int a){\n    return a * a;\n}\nint main(){\n    printf(\"%d\", some_function(3));\n    return 0;\n}",
+            "choices": [
+                {"choice": "A", "statement": "6"},
+                {"choice": "B", "statement": "9"},
+                {"choice": "C", "statement": "12"},
+                {"choice": "D", "statement": "0"}
+            ],
+            "answer": "B",
+            "hint": "The function squares its argument."
+        },
+        {
+            "number": "E3-P15",
+            "question": "What is the output of this program?\n\n#include <stdio.h>\nint factorial(int n) {\n    if (n <= 1) {\n        return 1;\n    }\n    return n * factorial(n - 1);\n}\nint main(void) {\n    printf(\"%d\\n\", factorial(4));\n    return 0;\n}",
+            "choices": [
+                {"choice": "A", "statement": "10"},
+                {"choice": "B", "statement": "16"},
+                {"choice": "C", "statement": "24"},
+                {"choice": "D", "statement": "12"}
+            ],
+            "answer": "C",
+            "hint": "factorial(4) = 4 x 3 x 2 x 1."
+        },
+        {
+            "number": "E3-P16",
+            "question": "Which program produces the following output?\n\nExpected output:\n120",
+            "choices": [
+                {"choice": "A", "statement": "#include <stdio.h>\nint factorial(int n) {\n    if (n == 0)\n        return 0;\n    return n * factorial(n - 1);\n}\nint main(void) {\n    printf(\"%d\\n\", factorial(5));\n    return 0;\n}"},
+                {"choice": "B", "statement": "#include <stdio.h>\nint factorial(int n) {\n    if (n <= 1)\n        return 1;\n    return n + factorial(n - 1);\n}\nint main(void) {\n    printf(\"%d\\n\", factorial(5));\n    return 0;\n}"},
+                {"choice": "C", "statement": "#include <stdio.h>\nint factorial(int n) {\n    if (n <= 1)\n        return 1;\n    return n * factorial(n - 1);\n}\nint main(void) {\n    printf(\"%d\\n\", factorial(5));\n    return 0;\n}"},
+                {"choice": "D", "statement": "#include <stdio.h>\nint main(void) {\n    printf(\"%d\\n\", 5 * 4 * 3);\n    return 0;\n}"}
+            ],
+            "answer": "C",
+            "hint": "120 is 5!. Check the base case and the operator."
+        }
+    ]
+}

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutY="502.0" prefHeight="578.0" prefWidth="1926.0" style="-fx-background-color: #450327;" />
+      <BorderPane layoutX="-4.0" layoutY="-2.0" prefHeight="1082.0" prefWidth="1924.0">
+         <bottom>
+            <Pane fx:id="toolBoxPane" prefHeight="576.0" prefWidth="1824.0" style="-fx-background-color: #450327;" styleClass="toolbox-texture" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="82.0" layoutY="78.0" prefHeight="408.0" prefWidth="365.0" styleClass="toolbox-pane" />
+                  <Pane fx:id="choicesPane" layoutX="477.0" layoutY="56.0" prefHeight="432.0" prefWidth="1413.0" style="-fx-background-color: transparent;">
+                     <children>
+                        <ScrollPane fx:id="choicesScrollPane" fitToWidth="true" layoutX="12.0" layoutY="48.0" prefHeight="333.0" prefWidth="1383.0">
+                           <content>
+                              <Label fx:id="choicesLabel" style="-fx-background-color: transparent;" styleClass="dialogue-text" wrapText="true">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></Label>
+                           </content>
+                        </ScrollPane>
+                     </children></Pane>
+                  <Button fx:id="prevButton" layoutX="449.0" layoutY="450.0" mnemonicParsing="false" onAction="#prevChoice" prefHeight="90.0" prefWidth="380.0" text="Previous">
+                     <styleClass>
+                        <String fx:value="game-button" />
+                        <String fx:value="big-button" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="nextButton" layoutX="1455.0" layoutY="450.0" mnemonicParsing="false" onAction="#nextChoice" prefHeight="90.0" prefWidth="380.0" text="Next ">
+                     <styleClass>
+                        <String fx:value="big-button" />
+                        <String fx:value="game-button" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="selectButton" layoutX="827.0" layoutY="450.0" mnemonicParsing="false" onAction="#choiceSelected" prefHeight="90.0" prefWidth="640.0" text="Select Choice">
+                     <styleClass>
+                        <String fx:value="big-button" />
+                        <String fx:value="game-button" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </Pane>
+         </bottom>
+         <left>
+            <Pane prefHeight="586.0" prefWidth="1926.0" styleClass="tutorial-bg" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane fx:id="playerStatPane" layoutX="25.0" layoutY="33.0" prefHeight="100.0" prefWidth="324.0">
+                     <styleClass>
+                        <String fx:value="status-pane" />
+                        <String fx:value="dialogue-text" />
+                     </styleClass></Pane>
+                  <Pane fx:id="enemyStatPane" layoutX="1571.0" layoutY="33.0" prefHeight="100.0" prefWidth="324.0" styleClass="status-pane" />
+                  <Pane fx:id="playerDialoguePane" layoutX="25.0" layoutY="182.0" prefHeight="102.0" prefWidth="240.0">
+                     <children>
+                        <Label fx:id="playerDialogueLabel" alignment="TOP_LEFT" layoutX="19.0" layoutY="15.0" prefHeight="73.0" prefWidth="204.0" styleClass="dialogue-text-style" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="dialog-frame" />
+                        <String fx:value="dialogue-text" />
+                     </styleClass>
+                  </Pane>
+                  <Pane fx:id="enemyDialoguePane" layoutX="1659.0" layoutY="182.0" prefHeight="102.0" prefWidth="240.0" styleClass="dialog-frame">
+                     <children>
+                        <Label fx:id="enemyDialogueLabel" alignment="TOP_LEFT" layoutX="20.0" layoutY="15.0" prefHeight="73.0" prefWidth="204.0" styleClass="dialogue-text-style" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="aiDialoguePane" layoutX="433.0" layoutY="23.0" prefHeight="472.0" prefWidth="1058.0">
+                     <children>
+                        <Pane prefHeight="473.0" prefWidth="1057.0" styleClass="question-pane">
+                           <children>
+                              <ScrollPane fx:id="aiDialogueScrollPane" fitToWidth="true" layoutX="24.0" layoutY="96.0" prefHeight="361.0" prefWidth="1015.0" styleClass="dialogue-text">
+                                 <content>
+                                    <Label fx:id="aiDialogueLabel" alignment="TOP_LEFT" styleClass="dialogue-text" wrapText="true">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </Label>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <ImageView fx:id="playerImageView" fitHeight="253.0" fitWidth="254.0" layoutX="80.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="enemyImageView" fitHeight="256.0" fitWidth="256.0" layoutX="1628.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+         </left>
+      </BorderPane>
+   </children>
+   <stylesheets>
+      <URL value="@../style/debugBorder.css" />
+      <URL value="@../style/gameplay.css" />
+      <URL value="@../style/visualNovel.css" />
+      <URL value="@../style/mainMenuButton.css" />
+      <URL value="@../style/tutorial.css" />
+   </stylesheets>
+</AnchorPane>

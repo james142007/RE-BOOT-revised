@@ -1,0 +1,29 @@
+{
+  "eraNumber": 6,
+  "name": "Event-Driven Programming",
+  "narrative": "Windows, buttons, clicks and keystrokes: welcome to the era of graphical interfaces! A program no longer runs from start to finish on its own. It waits for events and reacts to them, and that is exactly how the robots here have been built. Alan Cooper, the designer remembered as the father of Visual Basic, has offered to help us understand how events, handlers and schedulers fit together. Be careful though, every move we make is an event the machines can respond to. Take out the Scout Bots and Guard Bots, then defeat the Event Overseer to claim the sixth component!",
+  "focusParadigm": "EVENT_DRIVEN",
+  "programmer": "Alan Cooper",
+  "questionBank": "/questions/era6Questions.json",
+  "enemies": {
+    "easy": [
+      "Scout Bot 1",
+      "Scout Bot 2",
+      "Scout Bot 3",
+      "Scout Bot 4"
+    ],
+    "medium": [
+      "Guard Bot 1",
+      "Guard Bot 2"
+    ],
+    "boss": {
+      "name": "Event Overseer",
+      "component": {
+        "id": "component-6",
+        "name": "Computer Mouse",
+        "description": "A hand-sized pointing device that lets a person click, drag, and select things on a bitmapped screen. Event-driven programs sit idle until something like a click happens, then run the code attached to it, and the mouse made that style of programming natural. Visual Basic let programmers drop buttons onto a form and write short handlers for them. This is the sixth piece of the countermeasure: the idea that a program can wait, listen, and react to whatever happens next.",
+        "iconAssetPath": "/assets/components/era6.png"
+      }
+    }
+  }
+}

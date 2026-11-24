@@ -1,0 +1,280 @@
+{
+    "questions": [
+        {
+            "number": "E5-T01",
+            "question": "In imperative programming, what is meant by a program's state?",
+            "choices": [
+                {"choice": "A", "statement": "The set of syntax rules that the compiler uses to validate the source code"},
+                {"choice": "B", "statement": "The contents of the program's storage locations (variables) at a given point in its execution, which commands modify"},
+                {"choice": "C", "statement": "The sequence of logical statements the interpreter must prove true"},
+                {"choice": "D", "statement": "The final output produced after the program terminates"}
+            ],
+            "answer": "B",
+            "hint": "It is what the variables hold at a given moment."
+        },
+        {
+            "number": "E5-T02",
+            "question": "In the assignment statement x = x + 1 , what do the x on the left and the x on the right denote?",
+            "choices": [
+                {"choice": "A", "statement": "Both denote values"},
+                {"choice": "B", "statement": "Both denote locations"},
+                {"choice": "C", "statement": "The left x denotes a location and the right x denotes a value"},
+                {"choice": "D", "statement": "The left x denotes a value and the right x denotes a location"}
+            ],
+            "answer": "C",
+            "hint": "One side is a place to store something; the other side is something to read."
+        },
+        {
+            "number": "E5-T03",
+            "question": "Which statement about ALGOL 60 is consistent with the source material?",
+            "choices": [
+                {"choice": "A", "statement": "It introduced BNF notation for defining syntax, along with block structure, structured control statements and recursive procedures, but it failed to win wide acceptance in industry."},
+                {"choice": "B", "statement": "It was designed by IBM for business data processing and became the dominant language for banking systems."},
+                {"choice": "C", "statement": "It was a direct one-to-one transliteration of machine code, with each statement matching one CPU instruction."},
+                {"choice": "D", "statement": "It was designed for the IBM 704 and was the first high-level language with floating-point support."}
+            ],
+            "answer": "A",
+            "hint": "Think of its lasting influence on syntax notation and block structure."
+        },
+        {
+            "number": "E5-T04",
+            "question": "Why does the text warn against reading an imperative statement such as a = b as a mathematical statement of equality?",
+            "choices": [
+                {"choice": "A", "statement": "Because assignment is commutative, so a = b and b = a mean the same thing in both settings"},
+                {"choice": "B", "statement": "Because in Java the = symbol can only be used with constants, never with variables"},
+                {"choice": "C", "statement": "Because in mathematics an equality is always true once stated, while an assignment only makes two variables equal at that moment and they need not stay equal afterwards"},
+                {"choice": "D", "statement": "Because an assignment statement can never make two variables hold the same value"}
+            ],
+            "answer": "C",
+            "hint": "An assignment happens once at that moment; equality in math always holds."
+        },
+        {
+            "number": "E5-T05",
+            "question": "Which statement correctly distinguishes the while loop from the do-while loop?",
+            "choices": [
+                {"choice": "A", "statement": "The while loop evaluates its Boolean expression at the end of each iteration, so its body always runs at least once."},
+                {"choice": "B", "statement": "The do-while loop evaluates its Boolean expression at the end of each iteration, so its body always runs at least once."},
+                {"choice": "C", "statement": "Both loops evaluate their expression only after the body, but do-while can be infinite."},
+                {"choice": "D", "statement": "The while loop can be infinite, while the do-while loop is guaranteed to terminate."}
+            ],
+            "answer": "B",
+            "hint": "One of them checks its condition after running the body."
+        },
+        {
+            "number": "E5-T06",
+            "question": "Which description best captures the core idea of declarative programming?",
+            "choices": [
+                {"choice": "A", "statement": "Programs list explicit step-by-step commands that modify a stored state"},
+                {"choice": "B", "statement": "Programs must be written in a low-level language that maps directly to machine instructions"},
+                {"choice": "C", "statement": "Programs can only be written using the goto command and sequencing"},
+                {"choice": "D", "statement": "Programs describe what computation should be performed rather than how to perform it, minimizing or eliminating side effects"}
+            ],
+            "answer": "D",
+            "hint": "Say what you want, not how to get it."
+        },
+        {
+            "number": "E5-T07",
+            "question": "Which statement correctly describes a logic variable in logic programming, in contrast to a variable in an imperative language?",
+            "choices": [
+                {"choice": "A", "statement": "Once bound to a term, the binding cannot be destroyed or replaced by a binding to a different constant, although the bound term may be made more specific through other variables"},
+                {"choice": "B", "statement": "It can be reassigned any number of times, just like an imperative variable"},
+                {"choice": "C", "statement": "It always holds a fully defined value at the moment it is created"},
+                {"choice": "D", "statement": "Its bindings are one-directional, so a bound variable can never influence other variables"}
+            ],
+            "answer": "A",
+            "hint": "Once a logic variable is bound, it cannot simply be overwritten."
+        },
+        {
+            "number": "E5-T08",
+            "question": "Which set of rules correctly describes the unification algorithm for Prolog as presented in the source material?",
+            "choices": [
+                {"choice": "A", "statement": "A constant unifies with any constant; an uninstantiated variable unifies only with other variables; a structured term unifies with any other structured term"},
+                {"choice": "B", "statement": "A constant unifies only with itself; an uninstantiated variable unifies with anything and becomes instantiated to it; a structured term unifies with another only if it has the same function name and number of arguments and the arguments unify recursively"},
+                {"choice": "C", "statement": "A constant unifies only with variables; an instantiated variable can be rebound freely; a structured term unifies with another if they have the same number of arguments, regardless of function name"},
+                {"choice": "D", "statement": "Unification evaluates arithmetic terms first and succeeds whenever both sides have the same numeric value"}
+            ],
+            "answer": "B",
+            "hint": "Constants only match themselves; variables can take on whatever they meet."
+        },
+        {
+            "number": "E5-T09",
+            "question": "According to the source material, which statement correctly describes how Prolog searches for solutions and what the cut operator does?",
+            "choices": [
+                {"choice": "A", "statement": "Prolog uses a breadth-first strategy, and the cut forces it to explore all branches in parallel"},
+                {"choice": "B", "statement": "Prolog resolves goals right to left and tries clauses bottom to top, and the cut restarts the search from the root"},
+                {"choice": "C", "statement": "Prolog resolves goals left to right, tries clauses top to bottom in a depth-first search, and backtracks on failure; the cut freezes a choice and prunes the remaining sibling branches to its right"},
+                {"choice": "D", "statement": "Prolog selects clauses at random, and the cut guarantees that every possible solution is found"}
+            ],
+            "answer": "C",
+            "hint": "Prolog works top to bottom, left to right, and backs up when it gets stuck."
+        },
+        {
+            "number": "E5-T10",
+            "question": "Which statement about the functional sub-paradigm of declarative programming is consistent with the source material?",
+            "choices": [
+                {"choice": "A", "statement": "It is rooted in lambda calculus, a mathematical abstraction (not a programming language) used to study computability, function definition, function application and recursion, and it forms the basis of almost all functional languages"},
+                {"choice": "B", "statement": "It is rooted in first-order predicate calculus and relies on automatic backtracking as its only control mechanism"},
+                {"choice": "C", "statement": "It was created as a direct abstraction of the Turing machine and the Von Neumann machine with a modifiable store"},
+                {"choice": "D", "statement": "It is a markup-based approach such as HTML, in which tags describe the visual rendering of a page"}
+            ],
+            "answer": "A",
+            "hint": "Its roots are in a mathematical abstraction from the 1930s, not a programming language."
+        },
+        {
+            "number": "E5-P01",
+            "question": "Which program produces the following output?\n\nExpected output:\n15",
+            "choices": [
+                {"choice": "A", "statement": "public class Main {\n    public static void main(String[] args) {\n        int sum = 0;\n        for (int i = 1; i < 5; i++) sum += i;\n        System.out.println(sum);\n    }\n}"},
+                {"choice": "B", "statement": "public class Main {\n    public static void main(String[] args) {\n        int sum = 0;\n        for (int i = 1; i <= 5; i++) sum += i;\n        System.out.println(sum);\n    }\n}"},
+                {"choice": "C", "statement": "public class Main {\n    public static void main(String[] args) {\n        int sum = 0;\n        for (int i = 0; i < 5; i++) sum += i;\n        System.out.println(sum);\n    }\n}"},
+                {"choice": "D", "statement": "public class Main {\n    public static void main(String[] args) {\n        int sum = 0;\n        for (int i = 1; i <= 5; i++) sum = i;\n        System.out.println(sum);\n    }\n}"}
+            ],
+            "answer": "B",
+            "hint": "1 + 2 + 3 + 4 + 5 = 15. Check the loop bounds."
+        },
+        {
+            "number": "E5-P02",
+            "question": "Which program produces the following output?\n\nExpected output:\n120",
+            "choices": [
+                {"choice": "A", "statement": "public class Main {\n    static int fact(int n) {\n        int r = 1;\n        for (int i = 1; i < n; i++) r *= i;\n        return r;\n    }\n    public static void main(String[] args) {\n        System.out.println(fact(5));\n    }\n}"},
+                {"choice": "B", "statement": "public class Main {\n    static int fact(int n) {\n        int r = 0;\n        for (int i = 1; i <= n; i++) r *= i;\n        return r;\n    }\n    public static void main(String[] args) {\n        System.out.println(fact(5));\n    }\n}"},
+                {"choice": "C", "statement": "public class Main {\n    static int fact(int n) {\n        int r = 1;\n        for (int i = 1; i <= n; i++) r *= i;\n        return r;\n    }\n    public static void main(String[] args) {\n        System.out.println(fact(5));\n    }\n}"},
+                {"choice": "D", "statement": "public class Main {\n    static int fact(int n) {\n        int r = 1;\n        for (int i = 1; i <= n; i++) r += i;\n        return r;\n    }\n    public static void main(String[] args) {\n        System.out.println(fact(5));\n    }\n}"}
+            ],
+            "answer": "C",
+            "hint": "A factorial starts from 1 and multiplies."
+        },
+        {
+            "number": "E5-P03",
+            "question": "Fill in the blank so that the program produces the expected output.\n\nExpected output:\n12\n\n#include <stdio.h>\nint main(void) {\n    int values[] = {1, 2, 3, 4, 5, 6};\n    int sum = 0;\n    for (int i = 0; i < 6; i++) {\n        if (__________) {\n            sum += values[i];\n        }\n    }\n    printf(\"%d\\n\", sum);\n    return 0;\n}",
+            "choices": [
+                {"choice": "A", "statement": "values[i] % 2 != 0"},
+                {"choice": "B", "statement": "values[i] % 2 == 0"},
+                {"choice": "C", "statement": "values[i] > 2"},
+                {"choice": "D", "statement": "values[i] % 3 == 0"}
+            ],
+            "answer": "B",
+            "hint": "12 is 2 + 4 + 6, the even numbers."
+        },
+        {
+            "number": "E5-P04",
+            "question": "What is the output of this program?\n\nimport java.util.*;\npublic class Main {\n    public static void main(String[] args) {\n        int[] data = {3, 8, 1, 9, 4};\n        int max = Integer.MIN_VALUE;\n        for (int d : data) {\n            if (d > max) max = d;\n        }\n        int max2 = Arrays.stream(data).max().getAsInt();\n        long cnt = Arrays.stream(data).filter(d -> d >\n        3).count();\n        System.out.println(max + \" \" + max2 + \" \" + cnt);\n    }\n}",
+            "choices": [
+                {"choice": "A", "statement": "9 9 4"},
+                {"choice": "B", "statement": "9 8 3"},
+                {"choice": "C", "statement": "9 9 3"},
+                {"choice": "D", "statement": "8 9 3"}
+            ],
+            "answer": "C",
+            "hint": "The loop and the stream find the same maximum; then count the values greater than 3."
+        },
+        {
+            "number": "E5-P05",
+            "question": "What is the output of this program?\n\npublic static void main(String[] args){\n    int[] arr = {1, 2, 3, 4, 5, 6, 7};\n    System.out.print(someMethod(arr));\n}\npublic static int someMethod(int[] arr){\n    return Arrays.stream(arr).filter(x -> x%2 != 0).map(x -> x*x).reduce(0, (a,b) -> a + b);\n}",
+            "choices": [
+                {"choice": "A", "statement": "36"},
+                {"choice": "B", "statement": "84"},
+                {"choice": "C", "statement": "88"},
+                {"choice": "D", "statement": "28"}
+            ],
+            "answer": "B",
+            "hint": "Keep the odd numbers, square them, then add them all up."
+        },
+        {
+            "number": "E5-P06",
+            "question": "Which program produces the following output?\n\nExpected output:\n[JAVA, HASKELL]",
+            "choices": [
+                {"choice": "A", "statement": "import java.util.*;\nimport java.util.stream.*;\npublic class Main {\n    public static void main(String[] args) {\n        List<String> words = Arrays.asList(\"java\", \"c\", \"haskell\", \"go\");\n        System.out.println(words.stream()\n                .filter(w -> w.length() > 2)\n                .map(String::toUpperCase)\n                .collect(Collectors.toList()));\n    }\n}"},
+                {"choice": "B", "statement": "import java.util.*;\nimport java.util.stream.*;\npublic class Main {\n    public static void main(String[] args) {\n        List<String> words = Arrays.asList(\"java\", \"c\", \"haskell\", \"go\");\n        System.out.println(words.stream()\n                .filter(w -> w.length() > 1)\n                .map(String::toUpperCase)\n                .collect(Collectors.toList()));\n    }\n}"},
+                {"choice": "C", "statement": "import java.util.*;\nimport java.util.stream.*;\npublic class Main {\n    public static void main(String[] args) {\n        List<String> words = Arrays.asList(\"java\", \"c\", \"haskell\", \"go\");\n        System.out.println(words.stream()\n                .filter(w -> w.length() <= 2)\n                .map(String::toUpperCase)\n                .collect(Collectors.toList()));\n    }\n}"},
+                {"choice": "D", "statement": "import java.util.*;\nimport java.util.stream.*;\npublic class Main {\n    public static void main(String[] args) {\n        List<String> words = Arrays.asList(\"java\", \"c\", \"haskell\", \"go\");\n        System.out.println(words.stream()\n                .map(String::toUpperCase)\n                .collect(Collectors.toList()));\n    }\n}"}
+            ],
+            "answer": "A",
+            "hint": "Keep the words longer than 2 letters, then uppercase them."
+        },
+        {
+            "number": "E5-P07",
+            "question": "Which program produces the following output?\n\nExpected output:\n35",
+            "choices": [
+                {"choice": "A", "statement": "import java.util.stream.*;\npublic class Main {\n    public static void main(String[] args) {\n        int result = IntStream.rangeClosed(1, 5)\n                .filter(n -> n % 2 == 0)\n                .map(n -> n * n)\n                .sum();\n        System.out.println(result);\n    }\n}"},
+                {"choice": "B", "statement": "import java.util.stream.*;\npublic class Main {\n    public static void main(String[] args) {\n        int result = IntStream.range(1, 5)\n                .filter(n -> n % 2 == 1)\n                .map(n -> n * n)\n                .sum();\n        System.out.println(result);\n    }\n}"},
+                {"choice": "C", "statement": "import java.util.stream.*;\npublic class Main {\n    public static void main(String[] args) {\n        int result = IntStream.rangeClosed(1, 5)\n                .filter(n -> n % 2 == 1)\n                .map(n -> n * 2)\n                .sum();\n        System.out.println(result);\n    }\n}"},
+                {"choice": "D", "statement": "import java.util.stream.*;\npublic class Main {\n    public static void main(String[] args) {\n        int result = IntStream.rangeClosed(1, 5)\n                .filter(n -> n % 2 == 1)\n                .map(n -> n * n)\n                .sum();\n        System.out.println(result);\n    }\n}"}
+            ],
+            "answer": "D",
+            "hint": "1 + 9 + 25 = 35: the squares of the odd numbers."
+        },
+        {
+            "number": "E5-P08",
+            "question": "Which condition completes the stream pipeline?\n\nExpected output:\nALICE,CAROL\n\nimport java.util.*;\nimport java.util.stream.*;\npublic class Main {\n    public static void main(String[] args) {\n        List<String> names = Arrays.asList(\"bob\", \"alice\", \"eve\", \"carol\");\n        String r = names.stream()\n                .filter(__________)\n                .map(String::toUpperCase)\n                .collect(Collectors.joining(\",\"));\n        System.out.println(r);\n    }\n}",
+            "choices": [
+                {"choice": "A", "statement": "n -> n.length() >= 3"},
+                {"choice": "B", "statement": "n -> n.length() > 3"},
+                {"choice": "C", "statement": "n -> n.length() < 5"},
+                {"choice": "D", "statement": "n -> n.startsWith(\"a\")"}
+            ],
+            "answer": "B",
+            "hint": "Alice and Carol have 5 letters; bob and eve have only 3."
+        },
+        {
+            "number": "E5-P09",
+            "question": "What is the result of the following Prolog query?\n\nsum_to(0, 0).\nsum_to(N, S) :-\n    N > 0,\n    N1 is N - 1,\n    sum_to(N1, S1),\n    S is S1 + N.\n\n?- sum_to(4, X).",
+            "choices": [
+                {"choice": "A", "statement": "X = 4."},
+                {"choice": "B", "statement": "X = 10."},
+                {"choice": "C", "statement": "X = 24."},
+                {"choice": "D", "statement": "false."}
+            ],
+            "answer": "B",
+            "hint": "sum_to adds N + (N-1) + ... + 0."
+        },
+        {
+            "number": "E5-P10",
+            "question": "Which program and query give the expected result?\n\nExpected result:\nX = tweety.",
+            "choices": [
+                {"choice": "A", "statement": "bird(tweety).\nbird(polly).\n?- bird(X), X = tweety."},
+                {"choice": "B", "statement": "bird(tweety).\nbird(polly).\n?- bird(X), X = eagle."},
+                {"choice": "C", "statement": "bird(tweety).\nbird(polly).\n?- X = bird(tweety)."},
+                {"choice": "D", "statement": "bird(polly).\n?- bird(tweety)."}
+            ],
+            "answer": "A",
+            "hint": "Ask for bird(X) and then restrict X to the expected value."
+        },
+        {
+            "number": "E5-P11",
+            "question": "Which program and query give the expected result?\n\nExpected result:\nX = 2 ;\nX = 4.",
+            "choices": [
+                {"choice": "A", "statement": "number(2).\nnumber(4).\nnumber(6).\n?- number(X), X > 2."},
+                {"choice": "B", "statement": "number(2).\nnumber(4).\nnumber(6).\n?- number(X), X < 5."},
+                {"choice": "C", "statement": "number(2).\nnumber(4).\nnumber(6).\n?- X = 2, X = 4."},
+                {"choice": "D", "statement": "number(2).\nnumber(4).\nnumber(6).\n?- number(2), number(4)."}
+            ],
+            "answer": "B",
+            "hint": "Only 2 and 4 qualify. Which condition keeps them but drops 6?"
+        },
+        {
+            "number": "E5-P12",
+            "question": "Which clause completes the program to calculate the sum from 1 to N?\n\nExpected query and result:\n?- sum_to(3, X).\nX = 6.\n\nsum_to(0, 0).\nsum_to(N, S) :-\n    N > 0,\n    N1 is N - 1,\n    sum_to(N1, S1),\n    __________",
+            "choices": [
+                {"choice": "A", "statement": "S is S1 + N."},
+                {"choice": "B", "statement": "S is S1 * N."},
+                {"choice": "C", "statement": "S is S1 - N."},
+                {"choice": "D", "statement": "S is N - S1."}
+            ],
+            "answer": "A",
+            "hint": "Add the current N to the sum of the smaller numbers."
+        },
+        {
+            "number": "E5-P13",
+            "question": "Which clause completes the program so that it counts the elements of a list?\n\nExpected query and result:\n?- list_length([a,b,c], N).\nN = 3.\n\nlist_length([], 0).\nlist_length([_|Tail], N) :-\n    list_length(Tail, N1),\n    __________",
+            "choices": [
+                {"choice": "A", "statement": "N is N1 - 1."},
+                {"choice": "B", "statement": "N is N1 + 1."},
+                {"choice": "C", "statement": "N = N1."},
+                {"choice": "D", "statement": "N is N1 * 2."}
+            ],
+            "answer": "B",
+            "hint": "The length is one more than the length of the tail."
+        }
+    ]
+}

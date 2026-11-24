@@ -1,0 +1,29 @@
+{
+  "eraNumber": 3,
+  "name": "Functional Programming",
+  "narrative": "Whoa, we've gone all the way back to the 1930s, before electronic computers even existed! This is where Alonzo Church developed lambda calculus, the mathematical foundation of functional programming. Programs here are built from pure functions: give them the same input and they always return the same output, with no hidden state to change. Alonzo has offered to guide us, but the robots have turned his lecture hall into a fortress. Fight through the Scout Bots and Guard Bots, then defeat the Lambda Overseer. The third component is waiting!",
+  "focusParadigm": "FUNCTIONAL",
+  "programmer": "Alonzo Church",
+  "questionBank": "/questions/era3Questions.json",
+  "enemies": {
+    "easy": [
+      "Scout Bot 1",
+      "Scout Bot 2",
+      "Scout Bot 3",
+      "Scout Bot 4"
+    ],
+    "medium": [
+      "Guard Bot 1",
+      "Guard Bot 2"
+    ],
+    "boss": {
+      "name": "Lambda Overseer",
+      "component": {
+        "id": "component-3",
+        "name": "Paper Scroll",
+        "description": "A handwritten scroll covered in lambda notation, the pen-and-paper mathematics Alonzo Church used to define what it means to compute. No machine existed yet to run it, because the idea came first and the hardware followed. This is the third piece of the countermeasure: the insight that a program can be pure logic, built entirely from functions that always give the same answer for the same input.",
+        "iconAssetPath": "/assets/components/era3.png"
+      }
+    }
+  }
+}

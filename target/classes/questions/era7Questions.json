@@ -1,0 +1,244 @@
+{
+    "questions": [
+        {
+            "number": "E7-T01",
+            "question": "Which of the following best describes the primary goal of establishing a mapping between components of programming languages from different paradigms?",
+            "choices": [
+                {"choice": "A", "statement": "To prove that one paradigm is objectively superior to all others"},
+                {"choice": "B", "statement": "To compare and contrast the capabilities of languages and determine how the components of one language can be expressed, fully or partially, in another"},
+                {"choice": "C", "statement": "To automatically translate any program from one language into another without human intervention"},
+                {"choice": "D", "statement": "To demonstrate that every language is limited to representing only the entities designed for its own paradigm"}
+            ],
+            "answer": "B",
+            "hint": "Mapping is about comparing and expressing, not ranking or automatic translation."
+        },
+        {
+            "number": "E7-T02",
+            "question": "A student maps a Java Human class, with attributes name and age and a method getAge(), into C. Which C construct is the most direct counterpart of the class's data attributes?",
+            "choices": [
+                {"choice": "A", "statement": "A struct whose members correspond to the class's fields"},
+                {"choice": "B", "statement": "A #define macro placed in a header file"},
+                {"choice": "C", "statement": "A global extern function declaration"},
+                {"choice": "D", "statement": "A goto label placed before main()"}
+            ],
+            "answer": "A",
+            "hint": "C's way of grouping named fields together."
+        },
+        {
+            "number": "E7-T03",
+            "question": "In C, a struct groups data but does not bundle behavior the way a Java class does. Which technique allows a C struct to approximate an object's methods, so that behavior is stored alongside the data?",
+            "choices": [
+                {"choice": "A", "statement": "Declaring all of the struct's variables as static"},
+                {"choice": "B", "statement": "Using the extern keyword on each member"},
+                {"choice": "C", "statement": "Including function pointer members in the struct that refer to functions operating on the struct"},
+                {"choice": "D", "statement": "Declaring the struct inside a for loop"}
+            ],
+            "answer": "C",
+            "hint": "A struct member that stores the address of a function."
+        },
+        {
+            "number": "E7-T04",
+            "question": "A C programmer implements a Kidney \"method\" as void filter(Kidney *self), where the first parameter explicitly receives a pointer to the struct. What does this convention represent in terms of OOP?",
+            "choices": [
+                {"choice": "A", "statement": "An explicit counterpart of the implicit this reference that Java passes to instance methods"},
+                {"choice": "B", "statement": "An implementation of method overloading"},
+                {"choice": "C", "statement": "A way to enforce the private access modifier"},
+                {"choice": "D", "statement": "A replacement for the constructor"}
+            ],
+            "answer": "A",
+            "hint": "Java passes the object to its methods implicitly; C has to do it explicitly."
+        },
+        {
+            "number": "E7-T05",
+            "question": "Which statement best explains why a C mapping of an OOP class with private fields and public methods is usually classified as only \"Partial\"?",
+            "choices": [
+                {"choice": "A", "statement": "C cannot declare variables of any type"},
+                {"choice": "B", "statement": "C structs cannot contain more than one member"},
+                {"choice": "C", "statement": "C does not provide language-level access modifiers, so encapsulation can only be imitated by convention or by hiding the struct's definition behind a header, not enforced by the compiler"},
+                {"choice": "D", "statement": "C cannot define functions that accept pointers as parameters"}
+            ],
+            "answer": "C",
+            "hint": "Think about what C lacks for hiding data."
+        },
+        {
+            "number": "E7-T06",
+            "question": "In Prolog, the entity Human with name \"Ana\" and age 20 is expressed as the fact human(ana, 20). What does this representation convey about the declarative mapping of compound data?",
+            "choices": [
+                {"choice": "A", "statement": "The data is represented as relations asserted to be true, and a collection of such facts takes the place of an object's attribute values rather than a mutable instance in memory"},
+                {"choice": "B", "statement": "The fact is an object that stores its own methods and mutable state"},
+                {"choice": "C", "statement": "The fact is a procedure called in sequence from main"},
+                {"choice": "D", "statement": "The fact is a pointer to a memory address holding the object"}
+            ],
+            "answer": "A",
+            "hint": "Facts are statements asserted to be true, not objects sitting in memory."
+        },
+        {
+            "number": "E7-T07",
+            "question": "A Java Human object can change its age field at runtime via setAge(). Which is the best explanation of why reproducing this behavior in pure Prolog (without assert/retract) is classified as \"Partial\" or \"Not feasible\"?",
+            "choices": [
+                {"choice": "A", "statement": "Prolog cannot store numeric values"},
+                {"choice": "B", "statement": "Prolog has no concept of data types at all"},
+                {"choice": "C", "statement": "Prolog variables, once bound, cannot be reassigned, so in-place mutation of an object's attribute has no direct counterpart; changing state requires asserting and retracting facts, which are side-effecting operations outside the pure declarative model"},
+                {"choice": "D", "statement": "Prolog requires every fact to be declared inside a class before use"}
+            ],
+            "answer": "C",
+            "hint": "Prolog variables cannot be reassigned once they are bound."
+        },
+        {
+            "number": "E7-T08",
+            "question": "In an OOP model, Student extends Person expresses inheritance. Which of the following is the most faithful way to express this relationship in Prolog?",
+            "choices": [
+                {"choice": "A", "statement": "Writing a rule such as person(X) :- student(X)., so that every student is also derived to be a person"},
+                {"choice": "B", "statement": "Using the extends keyword before the student predicate"},
+                {"choice": "C", "statement": "Declaring student as a global variable of type person"},
+                {"choice": "D", "statement": "Using a function pointer from student to person"}
+            ],
+            "answer": "A",
+            "hint": "Express \"every student is also a person\" as a logical rule."
+        },
+        {
+            "number": "E7-T09",
+            "question": "A class Student is related to a class Course by an association: a student enrolls in many courses, and a course has many students. Which declarative representation best preserves this many-to-many association?",
+            "choices": [
+                {"choice": "A", "statement": "A single fact enrolled(student_course) with no arguments"},
+                {"choice": "B", "statement": "A binary predicate enrolled(StudentID, CourseID) with one fact for each pairing, which can be queried in either direction"},
+                {"choice": "C", "statement": "A struct embedded inside a Prolog list of integers"},
+                {"choice": "D", "statement": "A recursive rule with no base case"}
+            ],
+            "answer": "B",
+            "hint": "A many-to-many link works well as one fact per pairing."
+        },
+        {
+            "number": "E7-T10",
+            "question": "Consider an aggregation in which a Human \"has a\" Kidney. In C, which implementation best captures this relationship while preserving the independent lifetime that aggregation implies, as opposed to composition?",
+            "choices": [
+                {"choice": "A", "statement": "Embedding a full Kidney struct as a member, so the kidney is destroyed with its Human"},
+                {"choice": "B", "statement": "Declaring the Kidney as a local variable of main()"},
+                {"choice": "C", "statement": "Storing a pointer to a Kidney struct inside the Human struct, so the kidney can exist independently of the human and be shared or reassigned"},
+                {"choice": "D", "statement": "Replacing the relationship with a #define macro"}
+            ],
+            "answer": "C",
+            "hint": "Aggregation means the part can outlive the whole, so it should not be embedded inside it."
+        },
+        {
+            "number": "E7-P01",
+            "question": "What is the output of this program?\n\n#include <stdio.h>\nint main(void) {\n    int x = 5;\n    int *ptr = &x;\n    *ptr = *ptr + 3;\n    printf(\"%d\\n\", x);\n    return 0;\n}",
+            "choices": [
+                {"choice": "A", "statement": "5"},
+                {"choice": "B", "statement": "8"},
+                {"choice": "C", "statement": "3"},
+                {"choice": "D", "statement": "Compilation error."}
+            ],
+            "answer": "B",
+            "hint": "ptr points at x, so changing *ptr changes x."
+        },
+        {
+            "number": "E7-P02",
+            "question": "Which program produces the following output?\n\nExpected output:\n36",
+            "choices": [
+                {"choice": "A", "statement": "#include <stdio.h>\nvoid area(int *a, int b){\n    *a = *a + b;\n}\nint main(){\n    int length = 9;\n    int width = 4;\n    area(&length, width);\n    printf(\"%d\", length);\n    return 0;\n}"},
+                {"choice": "B", "statement": "#include <stdio.h>\nvoid area(int *a, int b){\n    *a = *a * b;\n}\nint main(){\n    int length = 6;\n    int width = 2;\n    area(&length, width);\n    printf(\"%d\", length);\n    return 0;\n}"},
+                {"choice": "C", "statement": "#include <stdio.h>\nvoid area(int *a, int b){\n    *a = *a * b;\n}\nint main(){\n    int length = 9;\n    int width = 4;\n    area(&length, width);\n    printf(\"%d\", length);\n    return 0;\n}"},
+                {"choice": "D", "statement": "#include <stdio.h>\nvoid area(int a, int *b){\n    *a = *a * b;\n}\nint main(){\n    int length = 9;\n    int width = 4;\n    area(length, &width);\n    printf(\"%d\", length);\n    return 0;\n}"}
+            ],
+            "answer": "C",
+            "hint": "36 is 9 x 4, and the function has to change the caller's variable."
+        },
+        {
+            "number": "E7-P03",
+            "question": "Which program produces the following output?\n\nExpected output:\n20",
+            "choices": [
+                {"choice": "A", "statement": "#include <stdio.h>\nint main(void) {\n    int x = 10;\n    int *p = &x;\n    *p = 20;\n    printf(\"%d\\n\", x);\n    return 0;\n}"},
+                {"choice": "B", "statement": "#include <stdio.h>\nint main(void) {\n    int x = 10;\n    int *p = NULL;\n    *p = 20;\n    printf(\"%d\\n\", x);\n    return 0;\n}"},
+                {"choice": "C", "statement": "#include <stdio.h>\nint main(void) {\n    int x = 10;\n    int *p = &x;\n    p = 20;\n    printf(\"%d\\n\", x);\n    return 0;\n}"},
+                {"choice": "D", "statement": "#include <stdio.h>\nint main(void) {\n    int x = 20;\n    int y = 10;\n    int *p = &y;\n    printf(\"%d\\n\", *p);\n    return 0;\n}"}
+            ],
+            "answer": "A",
+            "hint": "You must dereference the pointer to change the value it points to."
+        },
+        {
+            "number": "E7-P04",
+            "question": "Fill in the blank so that the program produces the expected output.\n\nExpected output:\nAlex 19\n\n#include <stdio.h>\nstruct Person {\n    __________\n};\nint main(void) {\n    struct Person p = {\"Alex\", 19};\n    printf(\"%s %d\\n\", p.name, p.age);\n    return 0;\n}",
+            "choices": [
+                {"choice": "A", "statement": "char name;\nint age;"},
+                {"choice": "B", "statement": "char *name;\nint age;"},
+                {"choice": "C", "statement": "int name;\nchar *age;"},
+                {"choice": "D", "statement": "char name[20];\nint *age;"}
+            ],
+            "answer": "B",
+            "hint": "The initializer gives a string and an integer. Which type can hold a string literal?"
+        },
+        {
+            "number": "E7-P05",
+            "question": "The C loop below finds the maximum of an array. Which line completes the recursive Haskell version?\n\nExpected output:\n9\n\nC version:\nint max = a[0];\nfor (int i = 1; i < n; i++)\n    if (a[i] > max) max = a[i];\n\nHaskell version:\nmyMax :: [Int] -> Int\nmyMax [x] = x\nmyMax (x:xs) = __________\n\nmain :: IO ()\nmain = print (myMax [3, 9, 4])",
+            "choices": [
+                {"choice": "A", "statement": "min x (myMax xs)"},
+                {"choice": "B", "statement": "x + myMax xs"},
+                {"choice": "C", "statement": "myMax xs"},
+                {"choice": "D", "statement": "max x (myMax xs)"}
+            ],
+            "answer": "D",
+            "hint": "The recursive case compares the head with the maximum of the rest."
+        },
+        {
+            "number": "E7-P06",
+            "question": "The C loop below counts the digits of a number. Which line completes the recursive Haskell version?\n\nExpected output:\n4\n\nC version:\nint count = 0;\nwhile (n > 0) { count++; n /= 10; }\n\nHaskell version:\ndigits :: Int -> Int\ndigits 0 = 0\ndigits n = __________\n\nmain :: IO ()\nmain = print (digits 4821)",
+            "choices": [
+                {"choice": "A", "statement": "digits (n `div` 10)"},
+                {"choice": "B", "statement": "1 + digits (n - 10)"},
+                {"choice": "C", "statement": "n + digits (n `div` 10)"},
+                {"choice": "D", "statement": "1 + digits (n `div` 10)"}
+            ],
+            "answer": "D",
+            "hint": "Count one digit, then continue with the number divided by 10."
+        },
+        {
+            "number": "E7-P07",
+            "question": "What is the result of the following Prolog query?\n\nlikes(alex, pizza).\nlikes(alex, pasta).\nlikes(mia, sushi).\n\n?- likes(alex, X).",
+            "choices": [
+                {"choice": "A", "statement": "X = pizza. (and no other solutions)"},
+                {"choice": "B", "statement": "X = pizza ;\nX = pasta."},
+                {"choice": "C", "statement": "X = alex ;\nX = mia."},
+                {"choice": "D", "statement": "false."}
+            ],
+            "answer": "B",
+            "hint": "Prolog can return every matching answer, one at a time."
+        },
+        {
+            "number": "E7-P08",
+            "question": "What is the result of the following Prolog query?\n\nparent(ana, ben).\nparent(ben, cara).\nparent(cara, dan).\n\ngrandparent(X, Z) :-\n    parent(X, Y),\n    parent(Y, Z).\n\n?- grandparent(ana, X).",
+            "choices": [
+                {"choice": "A", "statement": "X = ben."},
+                {"choice": "B", "statement": "X = cara."},
+                {"choice": "C", "statement": "X = dan."},
+                {"choice": "D", "statement": "false."}
+            ],
+            "answer": "B",
+            "hint": "grandparent(ana, X) asks for a child of ana's child."
+        },
+        {
+            "number": "E7-P09",
+            "question": "Which program and query give the expected result?\n\nExpected result:\nX = bob.",
+            "choices": [
+                {"choice": "A", "statement": "person(alice).\nperson(bob).\nperson(cara).\n?- person(bob), X = bob."},
+                {"choice": "B", "statement": "person(alice).\nperson(bob).\nperson(cara).\n?- person(X)."},
+                {"choice": "C", "statement": "person(alice).\nperson(bob).\nperson(cara).\n?- person(bob, X)."},
+                {"choice": "D", "statement": "person(alice).\nperson(cara).\n?- person(bob)."}
+            ],
+            "answer": "A",
+            "hint": "The query should confirm person(bob) and then bind X."
+        },
+        {
+            "number": "E7-P10",
+            "question": "Which clause completes the sibling rule so that the query succeeds?\n\nExpected query and result:\n?- sibling(alex, ben).\ntrue.\n\nparent(mary, alex).\nparent(mary, ben).\nparent(john, alex).\nparent(john, ben).\n\nsibling(X, Y) :-\n    __________",
+            "choices": [
+                {"choice": "A", "statement": "parent(X, Y)."},
+                {"choice": "B", "statement": "parent(P, X), parent(P, Y), X \\= Y."},
+                {"choice": "C", "statement": "parent(X, P), parent(Y, P), X = Y."},
+                {"choice": "D", "statement": "X = Y."}
+            ],
+            "answer": "B",
+            "hint": "Siblings share a parent and are not the same person."
+        }
+    ]
+}

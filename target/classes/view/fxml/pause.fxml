@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="800.0" stylesheets="@../style/visualNovel.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="205.0" layoutY="270.0" mnemonicParsing="false" onAction="#resume" prefHeight="70.0" prefWidth="400.0" styleClass="vn-choice-button" stylesheets="@../style/visualNovel.css" text="Resume">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Button>
+      <Button layoutX="205.0" layoutY="340.0" mnemonicParsing="false" onAction="#exitToMenu" prefHeight="70.0" prefWidth="400.0" styleClass="vn-choice-button" stylesheets="@../style/visualNovel.css" text="Exit To Menu">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Button>
+      <Button layoutX="205.0" layoutY="410.0" mnemonicParsing="false" onAction="#exitToDekstop" prefHeight="70.0" prefWidth="400.0" styleClass="vn-choice-button" stylesheets="@../style/visualNovel.css" text="Exit To Dekstop">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Button>
+      <HBox styleClass="volume-box" stylesheets="@../style/volumeSlider.css" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0">
+         <children>
+            <Label styleClass="volume-label" text="Music" />
+            <Slider fx:id="musicSlider" prefWidth="200.0" styleClass="volume-slider" />
+            <Label fx:id="musicPercentLabel" styleClass="volume-percent" text="70%" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

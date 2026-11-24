@@ -1,0 +1,137 @@
+
+{
+    "questions": [
+        {
+            "number": "1",
+            "question": "What is the output of this program?\nSystem.out.println(1+1);",
+            "choices": [
+                {"choice": "A", "statement": "2"},
+                {"choice": "B", "statement": "1"},
+                {"choice": "C", "statement": "7"},
+                {"choice": "D", "statement": "6"}
+            ],
+            "answer": "A"
+        },
+        {
+            "number": "2",
+            "question": "Which keyword is used to declare an integer variable in Java?",
+            "choices": [
+                {"choice": "A", "statement": "string"},
+                {"choice": "B", "statement": "int"},
+                {"choice": "C", "statement": "number"},
+                {"choice": "D", "statement": "integer"}
+            ],
+            "answer": "B"
+        },
+        {
+            "number": "3",
+            "question": "What is the output of this program?\nSystem.out.println(5 * 2 + 3);",
+            "choices": [
+                {"choice": "A", "statement": "25"},
+                {"choice": "B", "statement": "13"},
+                {"choice": "C", "statement": "16"},
+                {"choice": "D", "statement": "10"}
+            ],
+            "answer": "B"
+        },
+        {
+            "number": "4",
+            "question": "What is the output of this program?\nint x = 10;\nSystem.out.println(x / 3);",
+            "choices": [
+                {"choice": "A", "statement": "3"},
+                {"choice": "B", "statement": "3.33"},
+                {"choice": "C", "statement": "4"},
+                {"choice": "D", "statement": "Compilation error"}
+            ],
+            "answer": "A"
+        },
+        {
+            "number": "5",
+            "question": "What is the output of this program?\nString text = \"Java\";\nSystem.out.println(text.length());",
+            "choices": [
+                {"choice": "A", "statement": "3"},
+                {"choice": "B", "statement": "4"},
+                {"choice": "C", "statement": "5"},
+                {"choice": "D", "statement": "Java"}
+            ],
+            "answer": "B"
+        },
+        {
+            "number": "6",
+            "question": "What is the output of this program?\nint x = 5;\nif (x > 3) {\n    System.out.println(\"Yes\");\n} else {\n    System.out.println(\"No\");\n}",
+            "choices": [
+                {"choice": "A", "statement": "No"},
+                {"choice": "B", "statement": "Yes"},
+                {"choice": "C", "statement": "true"},
+                {"choice": "D", "statement": "Compilation error"}
+            ],
+            "answer": "B"
+        },
+        {
+            "number": "7",
+            "question": "What is the output of this program?\nfor (int i = 1; i <= 3; i++) {\n    System.out.print(i + \" \");\n}",
+            "choices": [
+                {"choice": "A", "statement": "0 1 2"},
+                {"choice": "B", "statement": "1 2 3"},
+                {"choice": "C", "statement": "1 2"},
+                {"choice": "D", "statement": "1 2 3 4"}
+            ],
+            "answer": "B"
+        },
+        {
+            "number": "8",
+            "question": "What is the output of this program?\nint x = 4;\nSystem.out.println(x++);\nSystem.out.println(x);",
+            "choices": [
+                {"choice": "A", "statement": "5 then 5"},
+                {"choice": "B", "statement": "4 then 4"},
+                {"choice": "C", "statement": "4 then 5"},
+                {"choice": "D", "statement": "5 then 4"}
+            ],
+            "answer": "C"
+        },
+        {
+            "number": "9",
+            "question": "Which programming paradigm organizes programs around objects that combine data and behavior?",
+            "choices": [
+                {"choice": "A", "statement": "Procedural programming"},
+                {"choice": "B", "statement": "Functional programming"},
+                {"choice": "C", "statement": "Object-oriented programming"},
+                {"choice": "D", "statement": "Logic programming"}
+            ],
+            "answer": "C"
+        },
+        {
+            "number": "10",
+            "question": "Which statement about Java variables is correct?",
+            "choices": [
+                {"choice": "A", "statement": "A local int variable automatically receives the value 0."},
+                {"choice": "B", "statement": "A variable's declared type determines the kinds of values it can hold."},
+                {"choice": "C", "statement": "Every variable must store a String."},
+                {"choice": "D", "statement": "Variable names may contain spaces."}
+            ],
+            "answer": "B"
+        },
+        {
+            "number": "11",
+            "question": "Which method is commonly used to display text in the Java console?",
+            "choices": [
+                {"choice": "A", "statement": "System.out.println()"},
+                {"choice": "B", "statement": "Console.display()"},
+                {"choice": "C", "statement": "print.text()"},
+                {"choice": "D", "statement": "System.input()"}
+            ],
+            "answer": "A"
+        },
+        {
+            "number": "12",
+            "question": "Which data type is used to store a true or false value in Java?",
+            "choices": [
+                {"choice": "A", "statement": "int"},
+                {"choice": "B", "statement": "char"},
+                {"choice": "C", "statement": "String"},
+                {"choice": "D", "statement": "boolean"}
+            ],
+            "answer": "D"
+        }
+    ]
+}

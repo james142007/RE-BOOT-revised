@@ -1,0 +1,29 @@
+{
+  "eraNumber": 1,
+  "name": "Introduction to Programming Paradigms",
+  "narrative": "Alright, we're here! Welcome to the dawn of computing, where humanity first began teaching machines how to think. Before modern programming languages existed, people relied on machine code and assembly to give computers their earliest instructions. Over time, new ways of programming emerged, each offering a different approach to solving problems. Oh, and you'll never believe who we just encountered—Ada Lovelace herself! She's considered the first computer programmer, and she has agreed to help us on our mission. With her guidance, we might learn enough about the foundations of programming to understand how these machines evolved. But be careful, I've detected hostile robots patrolling the area. Clear out the Scout Bots and Guard Bots, then take down their Overseer. We need that first component if we're going to have any chance of stopping the machines!",
+  "focusParadigm": "PROCEDURAL",
+  "programmer": "Ada Lovelace",
+  "questionBank": "/questions/era1Questions.json",
+  "enemies": {
+    "easy": [
+      "Scout Bot 1",
+      "Scout Bot 2",
+      "Scout Bot 3",
+      "Scout Bot 4"
+    ],
+    "medium": [
+      "Guard Bot 1",
+      "Guard Bot 2"
+    ],
+    "boss": {
+      "name": "Overseer Bot",
+      "component": {
+        "id": "component-1",
+        "name": "Punched Card",
+        "description": "A stiff card of pasteboard with holes punched in it, a hole meaning one thing and no hole meaning another. Borrowed from the Jacquard loom, it let Ada Lovelace imagine a machine following a written sequence of instructions. This is the first piece of the countermeasure: the idea that a machine can be told, step by step, exactly what to do.",
+        "iconAssetPath": "/assets/components/era1.png"
+      }
+    }
+  }
+}

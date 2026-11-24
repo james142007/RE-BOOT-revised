@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="particleImageView" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/map/MapBackBg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mapImageView" fitHeight="697.0" fitWidth="1138.0" layoutX="430.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true" styleClass="map-bg-image">
+         <image>
+            <Image url="@../../assets/map/mainMap.png" />
+         </image></ImageView>
+      <Button fx:id="backButton" alignment="CENTER" layoutX="51.0" layoutY="72.0" mnemonicParsing="false" onAction="#backPressed" prefHeight="67.0" prefWidth="173.0" styleClass="vn-choice-button" text="Back">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Button>
+   <Pane layoutX="544.0" layoutY="19.0" prefHeight="232.0" prefWidth="836.0" styleClass="status-pane" stylesheets="@../style/gameplay.css">
+      <children>
+         <Label alignment="CENTER" layoutX="22.0" layoutY="13.0" prefHeight="53.0" prefWidth="798.0" styleClass="status-title-text" text="Game Status">
+            <font>
+               <Font size="29.0" />
+            </font>
+         </Label>
+         <Label fx:id="componentCountLabel" layoutX="22.0" layoutY="70.0" styleClass="map-label-text" text="Components: 0 / 7" />
+         <Label fx:id="hpLabel" layoutX="22.0" layoutY="105.0" styleClass="map-label-text" text="HP: -- / --" />
+         <Label fx:id="livesLabel" layoutX="22.0" layoutY="140.0" styleClass="map-label-text" text="Lives: -- / 7" />
+         <HBox fx:id="statusComponentBox" alignment="CENTER_LEFT" layoutX="320.0" layoutY="95.0" prefHeight="70.0" prefWidth="490.0" spacing="10.0" />
+      </children>
+   </Pane>
+      <ImageView fx:id="era1ImageView" fitHeight="110.0" fitWidth="96.0" layoutX="891.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="era1Label" alignment="CENTER" layoutX="835.0" layoutY="459.0" onMousePressed="#levelPressed" prefHeight="81.0" prefWidth="212.0" text="Era 1" textAlignment="CENTER">
+         <font>
+            <Font size="33.0" />
+         </font>
+         <styleClass>
+            <String fx:value="map-labels" />
+            <String fx:value="map-label-text" />
+         </styleClass>
+      </Label>
+      <ImageView fx:id="era2ImageView" fitHeight="110.0" fitWidth="96.0" layoutX="589.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="era2Label" alignment="CENTER" layoutX="533.0" layoutY="556.0" onMouseClicked="#levelPressed" prefHeight="81.0" prefWidth="212.0" text="Era 2" textAlignment="CENTER">
+         <font>
+            <Font size="33.0" />
+         </font>
+         <styleClass>
+            <String fx:value="map-labels" />
+            <String fx:value="map-label-text" />
+         </styleClass>
+      </Label>
+      <ImageView fx:id="era3ImageView" fitHeight="110.0" fitWidth="96.0" layoutX="1172.0" layoutY="439.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="era3Label" alignment="CENTER" layoutX="1127.0" layoutY="563.0" onMouseClicked="#levelPressed" prefHeight="81.0" prefWidth="212.0" text="Era 3" textAlignment="CENTER">
+         <font>
+            <Font size="33.0" />
+         </font>
+         <styleClass>
+            <String fx:value="map-labels" />
+            <String fx:value="map-label-text" />
+         </styleClass>
+      </Label>
+      <ImageView fx:id="era4ImageView" fitHeight="110.0" fitWidth="96.0" layoutX="539.0" layoutY="697.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="era4Label" alignment="CENTER" layoutX="499.0" layoutY="806.0" onMouseClicked="#levelPressed" prefHeight="81.0" prefWidth="212.0" text="Era 4" textAlignment="CENTER">
+         <font>
+            <Font size="33.0" />
+         </font>
+         <styleClass>
+            <String fx:value="map-labels" />
+            <String fx:value="map-label-text" />
+         </styleClass>
+      </Label>
+      <ImageView fx:id="era5ImageView" fitHeight="110.0" fitWidth="96.0" layoutX="1305.0" layoutY="613.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="era5Label" alignment="CENTER" layoutX="1304.0" layoutY="757.0" onMouseClicked="#levelPressed" prefHeight="81.0" prefWidth="212.0" text="Era 5" textAlignment="CENTER">
+         <font>
+            <Font size="33.0" />
+         </font>
+         <styleClass>
+            <String fx:value="map-labels" />
+            <String fx:value="map-label-text" />
+         </styleClass>
+      </Label>
+      <ImageView fx:id="era6ImageView" fitHeight="110.0" fitWidth="96.0" layoutX="1146.0" layoutY="758.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="era6Label" alignment="CENTER" layoutX="1136.0" layoutY="874.0" onMouseClicked="#levelPressed" prefHeight="81.0" prefWidth="212.0" text="Era 6" textAlignment="CENTER">
+         <font>
+            <Font size="33.0" />
+         </font>
+         <styleClass>
+            <String fx:value="map-labels" />
+            <String fx:value="map-label-text" />
+         </styleClass>
+      </Label>
+      <ImageView fx:id="era7ImageView" fitHeight="110.0" fitWidth="96.0" layoutX="888.0" layoutY="740.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="era7Label" alignment="CENTER" layoutX="819.0" layoutY="870.0" onMouseClicked="#levelPressed" prefHeight="81.0" prefWidth="212.0" text="Era 7" textAlignment="CENTER">
+         <font>
+            <Font size="33.0" />
+         </font>
+         <styleClass>
+            <String fx:value="map-labels" />
+            <String fx:value="map-label-text" />
+         </styleClass>
+      </Label>
+   </children>
+   <stylesheets>
+      <URL value="@../style/gameplay.css" />
+      <URL value="@../style/visualNovel.css" />
+   </stylesheets>
+</AnchorPane>

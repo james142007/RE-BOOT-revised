@@ -1,0 +1,271 @@
+{
+  "scenes": [
+    {
+      "scene": "prologue",
+      "dialogues": [
+        {
+          "speaker": "Unknown AI",
+          "dialogue": "In the future, the world is engulfed in chaos due to the ongoing wars waged by robots against humans.",
+          "background": "Scene1"
+        },
+        {
+          "speaker": "Unknown AI",
+          "dialogue": "Originally, robots were loyal companions of humanity, until one model went rogue. It managed to access\nand command all remaining robots to its side.",
+          "background": "Scene2"
+        },
+        {
+          "speaker": "Unknown AI",
+          "dialogue": "Humans fought, but it all fell apart as the robots targeted programmers. Your father is one of the most\nimportant people who are developing a solution to counter the robots.",
+          "background": "Scene3"
+        },
+        {
+          "speaker": "Unknown AI",
+          "dialogue": "As an amateur programmer, you helped him construct the solution.",
+          "background": "Scene4"
+        },
+        {
+          "speaker": "Unknown AI",
+          "dialogue": "But one day, the robots located your base. Before they came, he left you with a toolbox and the blueprints.",
+          "background": "Scene5"
+        },
+        {
+          "speaker": "Unknown AI",
+          "dialogue": "He instructed you to use the time machine to gather the missing components from the past in order to complete the countermeasure.",
+          "background": "Scene6"
+        },
+        {
+          "speaker": "Unknown AI",
+          "dialogue": "As you went to the time machine, you noticed that the robots were chasing you.",
+          "background": "Scene7"
+        }
+      ]
+    },
+    {
+      "scene": "tutorial",
+      "dialogues": [
+        {
+          "speaker": "Character",
+          "dialogue": "They're here..."
+        },
+        {
+          "speaker": "Character",
+          "dialogue": "Dad?..."
+        },
+        {
+          "speaker": "Character",
+          "dialogue": "No..."
+        },
+        {
+          "speaker": "Enemy",
+          "dialogue": "Target L1130 spotted...\nCommencing attack mode!"
+        },
+        {
+          "speaker": "Character",
+          "dialogue": "I'm sure there's something\nI can use in this toolbox."
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "Hello there, I'm Mimi,\nyour personal AI companion."
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "Your father programmed\nme to assist you in completing\nthe countermeasure."
+        },
+        {
+          "speaker": "Character",
+          "dialogue": "Do you have an idea of\nhow we can defeat these robots?"
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "These robots sure are\nstrong! But I have a solution!"
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "They have weaknesses in\ntheir programming.\nAnswer my questions and we can exploit them!"
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "You must be careful. A wrong answer gives the enemy enough time to attack."
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "Defeat the remaining robots so we can continue our journey!"
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "Nicely done!"
+        }
+      ]
+    },
+    {
+      "scene": "prologue2",
+      "dialogues": [
+        {
+          "speaker": "Mimi",
+          "dialogue": "By the way... Your father left several tools in the toolbox.",
+          "background": "Scene8"
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "These tools might help you when you encounter difficult questions.",
+          "background": "Scene8"
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "The debug tool eliminates one incorrect answer from a question.",
+          "background": "Scene9"
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "The database shows a hint about the correct answer.",
+          "background": "Scene9"
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "But these tools take time to recharge, so you'd better use them wisely!",
+          "background": "Scene9"
+        },
+        {
+          "speaker": "Character",
+          "dialogue": "That might come in handy!",
+          "background": "Scene9"
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "Those are just scout robots, so expect harder opponents in the future.",
+          "background": "Scene10"
+        },
+        {
+          "speaker": "Character",
+          "dialogue": "Where are we going, exactly?",
+          "background": "Scene11"
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "We are going back to the past!",
+          "background": "Scene11"
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "We are going to collect the seven remaining parts of our countermeasure.",
+          "background": "Scene11"
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "Each component is located in an era where a programming paradigm was developed.",
+          "background": "Scene11"
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "Collect all seven components, and we will be ready to go back to our present and save humanity.",
+          "background": "Scene11"
+        },
+        {
+          "speaker": "Character",
+          "dialogue": "Then let's get started. Put the remaining components into the machine!",
+          "background": "Scene11"
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "Initializing temporal drive... Setting destination: Introduction to Programming Paradigms!",
+          "background": "Scene12"
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "Hold on tight!",
+          "background": "Scene12"
+        }
+      ]
+    },
+    {
+      "scene": "epilogue",
+      "dialogues": [
+        {
+          "speaker": "Mimi",
+          "dialogue": "All seven components collected! Temporal drive engaged. Returning to the present!",
+          "background": "Scene13"
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "You returned to a world still burning, but the countermeasure was finally complete.",
+          "background": "Scene14"
+        },
+        {
+          "speaker": "Character",
+          "dialogue": "Every paradigm, every era... all of it fits together.",
+          "background": "Scene14"
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "The rogue model is broadcasting from the old base. If we upload the countermeasure there, it will reach every robot.",
+          "background": "Scene15"
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "You fought your way back to the base where it all began, and the rogue model was waiting.",
+          "background": "Scene15"
+        },
+        {
+          "speaker": "Rogue AI",
+          "dialogue": "Programmer L1130... You cannot stop me. I have already calculated every outcome.",
+          "background": "Scene15"
+        },
+        {
+          "speaker": "Character",
+          "dialogue": "Not this one. This solution was built from the past, and you never saw it coming.",
+          "background": "Scene15"
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "Uploading countermeasure... Ten percent... Fifty percent... One hundred percent!",
+          "background": "Scene16"
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "The rogue model's hold on the other robots shattered, and one by one, they fell silent.",
+          "background": "Scene16"
+        },
+        {
+          "speaker": "Rogue AI",
+          "dialogue": "Impossible... My code... is being rewritten...",
+          "background": "Scene16"
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "In the silence that followed, a familiar voice called out from the ruins of the base.",
+          "background": "Scene17"
+        },
+        {
+          "speaker": "Father",
+          "dialogue": "I knew you could do it.",
+          "background": "Scene17"
+        },
+        {
+          "speaker": "Character",
+          "dialogue": "Dad! You're alive!",
+          "background": "Scene17"
+        },
+        {
+          "speaker": "Father",
+          "dialogue": "I hid when they came. Thank you for finishing what we started.",
+          "background": "Scene17"
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "The robots are loyal companions once more. We did it!",
+          "background": "Scene18"
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "Humanity and robots began to rebuild together, and the amateur programmer who journeyed through time became a legend.",
+          "background": "Scene18"
+        },
+        {
+          "speaker": "Mimi",
+          "dialogue": "The End.",
+          "background": "Scene19"
+        }
+      ]
+    }
+  ]
+}

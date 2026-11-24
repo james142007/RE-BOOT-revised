@@ -1,0 +1,29 @@
+{
+  "eraNumber": 7,
+  "name": "Component Mappings Between Paradigms",
+  "narrative": "This is it, the final stop! Every era we visited had its own way of building programs: classes in Java, structs in C, facts and rules in Prolog. Here we have to connect them all. A mapping shows how a component of one paradigm can be expressed in another, fully, partially, or sometimes not at all. Can a C struct act like an object? Can Prolog facts stand in for a class? Mimi has detected the strongest robots we have faced yet, guarding everything we need. Get past the Scout Bots and Guard Bots, then defeat Overseer Prime to recover the seventh and final component. Then we can finally go home and save humanity!",
+  "focusParadigm": "COMPONENT_MAPPING",
+  "programmer": "Gavin King",
+  "questionBank": "/questions/era7Questions.json",
+  "enemies": {
+    "easy": [
+      "Scout Bot 1",
+      "Scout Bot 2",
+      "Scout Bot 3",
+      "Scout Bot 4"
+    ],
+    "medium": [
+      "Guard Bot 1",
+      "Guard Bot 2"
+    ],
+    "boss": {
+      "name": "Overseer Prime",
+      "component": {
+        "id": "component-7",
+        "name": "USB Flash Drive",
+        "description": "A small flash drive holding the blueprints of Gavin King's work: the Hibernate mappings that translate objects into database tables and back. Its files describe how a component in one paradigm, like an Address object, can be stored as columns in another, like a customer row. This is the seventh and final piece of the countermeasure: the knowledge of how every paradigm can be mapped to the others, fully, partially, or not at all.",
+        "iconAssetPath": "/assets/components/era7.png"
+      }
+    }
+  }
+}

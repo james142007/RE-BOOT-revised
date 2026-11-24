@@ -1,0 +1,43 @@
+.tutorial-bg{
+    -fx-background-image: url("/assets/bg/tutorialbg.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+.dialog-frame{
+    -fx-background-image: url("/assets/battle/dialogueFrame.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+/* Text Style for the dialogues*/
+.dialogue-text-style{
+    -fx-font-family: "Rajdhani", "Orbitron", "Segoe UI", "Arial";
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-fill: #d4fbfe;
+    -fx-text-fill: #d4fbfe;          
+    -fx-effect: dropshadow(gaussian, rgba(34, 211, 238, 0.55), 6, 0.2, 0, 0);
+}
+.status-text-style{
+    -fx-font-family: "Rajdhani", "Orbitron", "Segoe UI", "Arial";
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-fill: #d4fbfe;
+    -fx-text-fill: #d4fbfe;          
+    -fx-effect: dropshadow(gaussian, rgba(34, 211, 238, 0.55), 6, 0.2, 0, 0);
+}
+/*  Scroll Pane transparency issue slution*/
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: transparent;
+}

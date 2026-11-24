@@ -1,0 +1,29 @@
+{
+  "eraNumber": 5,
+  "name": "Imperative and Declarative Programming",
+  "narrative": "This time we've landed in a debate that shaped the whole field. John Backus, who led the team that built FORTRAN and later asked whether programming could be freed from the von Neumann style, has agreed to guide us. On one side is imperative programming, where commands change the program's state step by step. On the other is declarative programming, where you describe what you want and let the language work out how to get it. The robots are already dug in and they do not care which style we prefer. Beat the Scout Bots and Guard Bots, then defeat the State Overseer for the fifth component!",
+  "focusParadigm": "IMPERATIVE_DECLARATIVE",
+  "programmer": "John Backus",
+  "questionBank": "/questions/era5Questions.json",
+  "enemies": {
+    "easy": [
+      "Scout Bot 1",
+      "Scout Bot 2",
+      "Scout Bot 3",
+      "Scout Bot 4"
+    ],
+    "medium": [
+      "Guard Bot 1",
+      "Guard Bot 2"
+    ],
+    "boss": {
+      "name": "State Overseer",
+      "component": {
+        "id": "component-5",
+        "name": "Vacuum Tube",
+        "description": "A glowing glass tube that served as the switching element inside the IBM 704, the machine FORTRAN was built for. Tubes were costly, hot, and prone to failure, so Backus's team had to prove a compiler could produce code nearly as fast as hand-written assembly. This is the fifth piece of the countermeasure: the idea that a high-level language can describe what you want while the machine efficiently handles the how.",
+        "iconAssetPath": "/assets/components/era5.png"
+      }
+    }
+  }
+}

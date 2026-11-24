@@ -1,0 +1,225 @@
+/* ========================================
+   RE:BOOT - GAMEPLAY SCREEN
+   Builds on .game-button from mainMenuButton.css (load that file first).
+   ======================================== */
+
+.gameplay-root {
+    -fx-background-color: #0b0710;
+}
+
+.gameplay-root .label {
+    -fx-text-fill: #E0F7FA;
+}
+
+/* dialogue frame (from visualNovel.css): their rule also paints a solid rectangle behind the image,
+   which would fill the frame's transparent margins, so switch that off here */
+.gameplay-root .dialogue-pane {
+    -fx-background-color: transparent;
+}
+
+.gameplay-root .label.speaker-label {
+    -fx-text-fill: #FF1744;
+}
+
+.gameplay-root .label.dialogue-text {
+    -fx-text-fill: #F5EAF0;
+}
+/*  Main question pane of the game */
+.question-pane{
+    -fx-background-image: url("/assets/battle/questionPane.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+/* scroll panes (question text, answer choices) sit on the dark background */
+.gameplay-root .scroll-pane {
+    -fx-background: transparent;
+    -fx-background-color: transparent;
+}
+
+.gameplay-root .scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.choices-pane{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/assets/battle/choicePane.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+}
+
+.toolbox-pane{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/assets/battle/toolbox.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+}
+
+.toolbox-texture{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/assets/battle/toolboxTexture.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+}
+
+/* ---- button variants (all of them also have .game-button) ---- */
+
+.game-button.choice-button {
+    -fx-alignment: CENTER_LEFT;
+    -fx-text-alignment: left;
+    -fx-padding: 0 70 0 70;
+    -fx-font-size: 22px;
+}
+
+.game-button.lifeline-button {
+    -fx-font-size: 24px;
+}
+
+.game-button.big-button {
+    -fx-font-size: 28px;
+}
+
+/* ---- answer feedback after a choice is resolved ---- */
+/* (the buttons are disabled at that point, so :disabled is restated to keep them bright) */
+
+.game-button.choice-correct,
+.game-button.choice-correct:disabled {
+    -fx-opacity: 1.0;
+    -fx-text-fill: #69F0AE;
+    -fx-effect: dropshadow(gaussian, #00E676, 16, 0.6, 0, 0);
+}
+
+.game-button.choice-wrong,
+.game-button.choice-wrong:disabled {
+    -fx-opacity: 1.0;
+    -fx-text-fill: #FF1744;
+    -fx-effect: dropshadow(gaussian, #FF1744, 16, 0.6, 0, 0);
+}
+
+/* ---- question countdown (timerLabel): turns red in the last seconds ---- */
+
+.gameplay-root .label.timer-label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #E0F7FA;
+}
+
+.gameplay-root .label.timer-label.timer-warning {
+    -fx-text-fill: #FF1744;
+}
+
+/* ---- the single choice box (label inside choicesScrollPane) ---- */
+
+.gameplay-root .label.choice-display {
+    -fx-font-size: 28px;
+    -fx-padding: 14 20 14 20;
+}
+
+/* colour the shown choice once the question is resolved */
+.gameplay-root .label.choice-display.choice-correct {
+    -fx-text-fill: #69F0AE;
+}
+
+.gameplay-root .label.choice-display.choice-wrong {
+    -fx-text-fill: #FF1744;
+}
+/* MAP */
+.map-bg-image {
+    -fx-background-image: url("/assets/map/mainMap.png");/* not used */
+}
+.map-labels{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/assets/map/Labels.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;   
+}
+/* Text stlye for the map panels*/
+.map-label-text{
+    -fx-font-family: "Rajdhani", "Orbitron", "Segoe UI", "Arial";
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-fill: #d4fbfe;
+    -fx-text-fill: #d4fbfe;          
+    -fx-effect: dropshadow(gaussian, rgba(34, 211, 238, 0.55), 6, 0.2, 0, 0);
+}
+/* Hover effect*/
+.map-labels:hover{
+    -fx-effect: dropshadow(gaussian, rgba(40, 190, 255, 0.95), 24, 0.45, 0, 0);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+/* Status panel in the map */
+.status-pane{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/assets/map/status.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;   
+}
+.status-title-text{
+    -fx-font-family: "Rajdhani", "Orbitron", "Segoe UI", "Arial";
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-fill: #d4fbfe;
+    -fx-text-fill: #d4fbfe;          
+    -fx-effect: dropshadow(gaussian, rgba(34, 211, 238, 0.55), 6, 0.2, 0, 0);
+}
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: cyan;
+}
+.scroll-pane .scroll-bar:horizontal .thumb {
+    -fx-background-color: cyan;
+}
+.scroll-pane .scroll-bar:vertical .track {
+    -fx-background-color: rgba(0, 255, 255, 0.15);
+}
+
+
+/* Game won overlay bg*/
+
+.game-won-bg{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/assets/overlays/gameWon.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+}
+/* Game Lost Overlay Panel*/
+.game-lost{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/assets/overlays/lostScreen.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+}
+
+/* ---- "You lost a life" overlay (lifeLost.fxml) ---- */
+
+.life-lost-panel {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/assets/novel/DialogFrame.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+    -fx-alignment: center;
+    -fx-spacing: 28;
+    -fx-padding: 70 90 70 90;
+}
+
+.life-lost-title {
+    -fx-font-family: "Consolas";
+    -fx-font-size: 54px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FF1744;
+    -fx-effect: dropshadow(gaussian, rgba(255, 23, 68, 0.6), 14, 0.4, 0, 0);
+}
+
+.life-lost-lives {
+    -fx-font-family: "Consolas";
+    -fx-font-size: 30px;
+    -fx-text-fill: #E0F7FA;
+}

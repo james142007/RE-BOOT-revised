@@ -1,0 +1,12 @@
+.main-bg{
+    -fx-background-image: url("/assets/splashScreen/splash.jpeg");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+.loading-screen{
+    -fx-background-image: url("/assets/LoadingScreen.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}

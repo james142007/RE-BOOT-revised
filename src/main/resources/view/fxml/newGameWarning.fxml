@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: transparent;" styleClass="toolbox-pane" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="bacckButton" layoutX="103.0" layoutY="333.0" mnemonicParsing="false" onAction="#backPressed" prefHeight="37.0" prefWidth="112.0" styleClass="game-button" text="Back" />
+      <Button fx:id="newGameButton" layoutX="379.0" layoutY="331.0" mnemonicParsing="false" onAction="#createNewGame" prefHeight="37.0" prefWidth="121.0" styleClass="game-button" text="Continue" />
+      <Label alignment="CENTER" layoutX="87.0" layoutY="74.0" prefHeight="92.0" prefWidth="393.0" styleClass="dialogue-text" text="The game has detected that there is" textAlignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="31.0" layoutY="120.0" prefHeight="92.0" prefWidth="539.0" styleClass="dialogue-text" text="currently a game session saved." textAlignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="26.0" layoutY="186.0" prefHeight="92.0" prefWidth="549.0" styleClass="dialogue-text" text="Creating a new game will overwrite it" textAlignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="26.0" layoutY="14.0" prefHeight="92.0" prefWidth="549.0" styleClass="speaker-label" text="WARNING!" textAlignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <stylesheets>
+            <URL value="@../style/gameplay.css" />
+            <URL value="@../style/visualNovel.css" />
+            <URL value="@../style/mainMenuButton.css" />
+            <URL value="@../style/mainMenu.css" />
+         </stylesheets>
+      </Label>
+   </children>
+   <stylesheets>
+      <URL value="@../style/mainMenuButton.css" />
+      <URL value="@../style/visualNovel.css" />
+      <URL value="@../style/gameplay.css" />
+      <URL value="@../style/tutorial.css" />
+      <URL value="@../style/mainMenu.css" />
+      <URL value="@../style/tutorial.css" />
+   </stylesheets>
+</Pane>

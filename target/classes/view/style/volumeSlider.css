@@ -1,0 +1,74 @@
+/* ========================================
+   RE:BOOT - MUSIC VOLUME SLIDER
+   Shared by the main menu and the pause menu
+   ======================================== */
+
+.volume-box {
+    -fx-alignment: center-right;
+    -fx-spacing: 14;
+    -fx-padding: 10 18 10 18;
+    -fx-background-color: rgba(4, 12, 20, 0.70);
+    -fx-border-color: #00F5FF;
+    -fx-border-width: 1.5;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.volume-label {
+    -fx-text-fill: #00F5FF;
+    -fx-font-family: "Consolas";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.volume-percent {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Consolas";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-min-width: 64px;
+    -fx-alignment: center-right;
+}
+
+/* ---- slider ---- */
+
+.volume-slider {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.volume-slider .track {
+    -fx-background-color: #0A1A22;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-color: #00F5FF;
+    -fx-border-width: 1;
+    -fx-border-radius: 0;
+    -fx-pref-height: 8px;
+}
+
+.volume-slider .thumb {
+    -fx-background-color: #00F5FF;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 11 6 11 6;
+    -fx-effect: dropshadow(gaussian, #00F5FF, 10, 0.5, 0, 0);
+}
+
+.volume-slider:hover .thumb {
+    -fx-background-color: #FFFFFF;
+}
+
+.volume-slider:pressed .thumb {
+    -fx-background-color: #FF1744;
+    -fx-effect: dropshadow(gaussian, #FF1744, 8, 0.6, 0, 0);
+}
+
+.volume-slider:focused {
+    -fx-background-color: transparent;
+}
+
+.volume-slider:focused .thumb {
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+}

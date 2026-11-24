@@ -1,0 +1,244 @@
+{
+    "questions": [
+        {
+            "number": "E1-T01",
+            "question": "Which of the following best defines a \"programming paradigm\"?",
+            "choices": [
+                {"choice": "A", "statement": "A specific programming language used to build software"},
+                {"choice": "B", "statement": "A style or approach to programming based on certain principles or patterns"},
+                {"choice": "C", "statement": "A compiler that translates code into machine language"},
+                {"choice": "D", "statement": "A hardware architecture used to execute instructions"}
+            ],
+            "answer": "B",
+            "hint": "It is a way of thinking about problems, not a tool you install."
+        },
+        {
+            "number": "E1-T02",
+            "question": "Which of the following is the correct chronological order of language evolution, from earliest to most recent?",
+            "choices": [
+                {"choice": "A", "statement": "High-level languages → Assembly languages → Machine languages"},
+                {"choice": "B", "statement": "Assembly languages → Machine languages → High-level languages"},
+                {"choice": "C", "statement": "Machine languages → Assembly languages → High-level languages"},
+                {"choice": "D", "statement": "High-level languages → Machine languages → Assembly languages"}
+            ],
+            "answer": "C",
+            "hint": "Programmers moved step by step from raw bits toward human-friendly code."
+        },
+        {
+            "number": "E1-T03",
+            "question": "Machine language is best described as:",
+            "choices": [
+                {"choice": "A", "statement": "A human-readable language that uses mnemonics for instructions"},
+                {"choice": "B", "statement": "The direct, binary representation of instructions executed by hardware"},
+                {"choice": "C", "statement": "A language independent of the underlying computer architecture"},
+                {"choice": "D", "statement": "A scripting language used for automating tasks"}
+            ],
+            "answer": "B",
+            "hint": "Hardware only understands 0s and 1s."
+        },
+        {
+            "number": "E1-T04",
+            "question": "What is the primary advantage of assembly language over machine language?",
+            "choices": [
+                {"choice": "A", "statement": "It is completely independent of computer hardware"},
+                {"choice": "B", "statement": "It allows direct manipulation of high-level data structures like objects"},
+                {"choice": "C", "statement": "It uses human-readable mnemonics and labels instead of raw binary/hex code"},
+                {"choice": "D", "statement": "It eliminates the need for a compiler or assembler"}
+            ],
+            "answer": "C",
+            "hint": "Names are easier for people to remember than long strings of numbers."
+        },
+        {
+            "number": "E1-T05",
+            "question": "FORTRAN and ALGOL are historically significant because they were among the first:",
+            "choices": [
+                {"choice": "A", "statement": "Object-oriented programming languages"},
+                {"choice": "B", "statement": "Logic-based programming languages"},
+                {"choice": "C", "statement": "Scripting languages for web development"},
+                {"choice": "D", "statement": "High-level languages designed to be machine-independent"}
+            ],
+            "answer": "D",
+            "hint": "Neither language existed to serve one specific machine."
+        },
+        {
+            "number": "E1-T06",
+            "question": "The von Neumann architecture is characterized primarily by:",
+            "choices": [
+                {"choice": "A", "statement": "A single memory space shared by both instructions and data, executed sequentially"},
+                {"choice": "B", "statement": "Functions as first-class values with no shared mutable state"},
+                {"choice": "C", "statement": "Parallel execution of instructions using multiple independent processors"},
+                {"choice": "D", "statement": "Programs expressed purely as logical facts and rules"}
+            ],
+            "answer": "A",
+            "hint": "One memory, two jobs: what does it hold?"
+        },
+        {
+            "number": "E1-T07",
+            "question": "Which model is most commonly cited as the theoretical foundation for the functional (non-von Neumann) programming paradigm?",
+            "choices": [
+                {"choice": "A", "statement": "Turing machine"},
+                {"choice": "B", "statement": "Lambda calculus"},
+                {"choice": "C", "statement": "Finite state automaton"},
+                {"choice": "D", "statement": "Relational algebra"}
+            ],
+            "answer": "B",
+            "hint": "A formal system created by Alonzo Church in the 1930s."
+        },
+        {
+            "number": "E1-T08",
+            "question": "A key distinction between imperative and declarative programming is that imperative programming:",
+            "choices": [
+                {"choice": "A", "statement": "Focuses only on describing \"what\" result is needed, not \"how\" to achieve it"},
+                {"choice": "B", "statement": "Explicitly specifies a sequence of commands that change program state"},
+                {"choice": "C", "statement": "Cannot be used to implement loops or conditionals"},
+                {"choice": "D", "statement": "Is only used in logic-based languages like Prolog"}
+            ],
+            "answer": "B",
+            "hint": "Think of a recipe: step by step, changing values as you go."
+        },
+        {
+            "number": "E1-T09",
+            "question": "Which of the following pairs correctly matches a language category with its defining feature?",
+            "choices": [
+                {"choice": "A", "statement": "Object-oriented languages — programming with no persistent state at all"},
+                {"choice": "B", "statement": "Logic languages — programming by specifying facts and rules for an inference engine"},
+                {"choice": "C", "statement": "Visual languages — languages based entirely on text-based syntax"},
+                {"choice": "D", "statement": "Scripting languages — extremely low-level, hardware-dependent code"}
+            ],
+            "answer": "B",
+            "hint": "Prolog-style languages are built from facts and rules."
+        },
+        {
+            "number": "E1-T10",
+            "question": "Why is it important for a programmer to study multiple programming paradigms rather than mastering only one language?",
+            "choices": [
+                {"choice": "A", "statement": "It guarantees that all languages will eventually be replaced by a single universal paradigm"},
+                {"choice": "B", "statement": "Paradigms have no real impact on how a programmer approaches problem-solving"},
+                {"choice": "C", "statement": "It removes the need to ever learn syntax details of a language"},
+                {"choice": "D", "statement": "It broadens problem-solving approaches and helps programmers choose the most suitable paradigm/language for a given problem"}
+            ],
+            "answer": "D",
+            "hint": "More tools in the toolbox means a better fit for each job."
+        },
+        {
+            "number": "E1-P01",
+            "question": "What is the output of this program?\n\n#include <stdio.h>\nint main() {\n    int a = 5;\n    int b = 3;\n    printf(\"%d\", a + b * 2);\n    return 0;\n}",
+            "choices": [
+                {"choice": "A", "statement": "11"},
+                {"choice": "B", "statement": "16"},
+                {"choice": "C", "statement": "10"},
+                {"choice": "D", "statement": "8"}
+            ],
+            "answer": "A",
+            "hint": "Multiplication is evaluated before addition."
+        },
+        {
+            "number": "E1-P02",
+            "question": "Fill the blank with the correct line of code to complete the program.\n\n__________\nint main() {\n    printf(\"Hello World\");\n    return 0;\n}",
+            "choices": [
+                {"choice": "A", "statement": "import stdio.h;"},
+                {"choice": "B", "statement": "#include <stdio.h>"},
+                {"choice": "C", "statement": "using namespace std;"},
+                {"choice": "D", "statement": "#use <stdio.h>"}
+            ],
+            "answer": "B",
+            "hint": "Which line gives you access to printf in C?"
+        },
+        {
+            "number": "E1-P03",
+            "question": "What is the output of this program?\n\n#include <stdio.h>\nint main() {\n    int x = 4;\n    x = x * 3 - 2;\n    printf(\"%d\", x);\n    return 0;\n}",
+            "choices": [
+                {"choice": "A", "statement": "12"},
+                {"choice": "B", "statement": "10"},
+                {"choice": "C", "statement": "14"},
+                {"choice": "D", "statement": "8"}
+            ],
+            "answer": "B",
+            "hint": "Work through the assignment one step at a time."
+        },
+        {
+            "number": "E1-P04",
+            "question": "What is the output of this program?\n\n#include <stdio.h>\nint main() {\n    int sum = 0;\n    for (int i = 1; i <= 3; i++) {\n        sum += i;\n    }\n    printf(\"%d\", sum);\n    return 0;\n}",
+            "choices": [
+                {"choice": "A", "statement": "3"},
+                {"choice": "B", "statement": "10"},
+                {"choice": "C", "statement": "6"},
+                {"choice": "D", "statement": "9"}
+            ],
+            "answer": "C",
+            "hint": "Trace the loop: what does sum hold after each pass?"
+        },
+        {
+            "number": "E1-P05",
+            "question": "What is the output of this program?\n\n#include <stdio.h>\nint main() {\n    int a = 7, b = 2;\n    printf(\"%d\", a % b);\n    return 0;\n}",
+            "choices": [
+                {"choice": "A", "statement": "3.5"},
+                {"choice": "B", "statement": "0"},
+                {"choice": "C", "statement": "3"},
+                {"choice": "D", "statement": "1"}
+            ],
+            "answer": "D",
+            "hint": "The % operator gives the remainder of a division."
+        },
+        {
+            "number": "E1-P06",
+            "question": "Which statement produces the expected output?\n\nExpected output:\n7",
+            "choices": [
+                {"choice": "A", "statement": "printf(\"%d\", 3 * 4);"},
+                {"choice": "B", "statement": "printf(\"%d\", 3 + 4 * 2);"},
+                {"choice": "C", "statement": "printf(\"%d\", 3 + 4);"},
+                {"choice": "D", "statement": "printf(\"%d\", 4 - 3);"}
+            ],
+            "answer": "C",
+            "hint": "Work out what each choice would print."
+        },
+        {
+            "number": "E1-P07",
+            "question": "Which loop produces the expected output?\n\nExpected output:\n1 2 3",
+            "choices": [
+                {"choice": "A", "statement": "for (int i = 1; i <= 3; i++) printf(\"%d \", i);"},
+                {"choice": "B", "statement": "for (int i = 0; i < 3; i++) printf(\"%d \", i);"},
+                {"choice": "C", "statement": "for (int i = 1; i < 3; i++) printf(\"%d \", i);"},
+                {"choice": "D", "statement": "for (int i = 3; i >= 1; i--) printf(\"%d \", i);"}
+            ],
+            "answer": "A",
+            "hint": "Check where each loop starts and where it stops."
+        },
+        {
+            "number": "E1-P08",
+            "question": "Fill the blank so that the program prints 5.\n\n#include <stdio.h>\nint main() {\n    int n = 5;\n    __________\n    return 0;\n}",
+            "choices": [
+                {"choice": "A", "statement": "print(n);"},
+                {"choice": "B", "statement": "printf(\"%d\", n);"},
+                {"choice": "C", "statement": "scanf(\"%d\", n);"},
+                {"choice": "D", "statement": "printf(\"%s\", n);"}
+            ],
+            "answer": "B",
+            "hint": "n is an int. Which format specifier prints an int?"
+        },
+        {
+            "number": "E1-P09",
+            "question": "Fill the blank so that the program prints 012.\n\n#include <stdio.h>\nint main() {\n    int i;\n    for (__________) {\n        printf(\"%d\", i);\n    }\n    return 0;\n}",
+            "choices": [
+                {"choice": "A", "statement": "i = 0; i < 3; i++"},
+                {"choice": "B", "statement": "i = 1; i < 3; i++"},
+                {"choice": "C", "statement": "i = 0; i <= 3; i++"},
+                {"choice": "D", "statement": "i = 0, i < 3, i++"}
+            ],
+            "answer": "A",
+            "hint": "The program should print three digits, starting at zero."
+        },
+        {
+            "number": "E1-P10",
+            "question": "Fill the blank so that the program prints 5.\n\n#include <stdio.h>\n__________ add(int a, int b) {\n    return a + b;\n}\nint main() {\n    printf(\"%d\", add(2, 3));\n    return 0;\n}",
+            "choices": [
+                {"choice": "A", "statement": "void"},
+                {"choice": "B", "statement": "float"},
+                {"choice": "C", "statement": "string"},
+                {"choice": "D", "statement": "int"}
+            ],
+            "answer": "D",
+            "hint": "The function returns the sum of two whole numbers."
+        }
+    ]
+}

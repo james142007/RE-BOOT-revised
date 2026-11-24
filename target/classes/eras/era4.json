@@ -1,0 +1,29 @@
+{
+  "eraNumber": 4,
+  "name": "Object-Oriented Programming",
+  "narrative": "We've arrived in the 1960s, just as programmers began bundling data and behavior together into objects. The ideas of classes, inheritance and polymorphism are taking shape, and the man behind one of the first object-oriented languages, Simula, is here: Ole-Johan Dahl! He has agreed to teach us how objects work, but the robots have been busy too. They have inherited every bad habit a machine can have, and they are patrolling the lab in force. Defeat the Scout Bots and Guard Bots, then take down the Class Overseer to claim the fourth component!",
+  "focusParadigm": "OBJECT_ORIENTED",
+  "programmer": "Ole-Johan Dahl",
+  "questionBank": "/questions/era4Questions.json",
+  "enemies": {
+    "easy": [
+      "Scout Bot 1",
+      "Scout Bot 2",
+      "Scout Bot 3",
+      "Scout Bot 4"
+    ],
+    "medium": [
+      "Guard Bot 1",
+      "Guard Bot 2"
+    ],
+    "boss": {
+      "name": "Class Overseer",
+      "component": {
+        "id": "component-4",
+        "name": "Ferrite Core Memory",
+        "description": "A small grid of tiny magnetic rings threaded onto fine wires, each ring holding a single bit. This was the working memory of the UNIVAC 1107 that Simula grew up on, and it was so scarce that Dahl and Nygaard had to build dynamic allocation and garbage collection into the language to make objects fit. This is the fourth piece of the countermeasure: the idea that a program can create, track, and clean up living objects, each with its own state and behavior.",
+        "iconAssetPath": "/assets/components/era4.png"
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" styleClass="main-bg" stylesheets="@../style/mainMenu.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+      <children>
+         <Button layoutX="136.0" layoutY="372.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#tutorialPressed" prefHeight="120.0" prefWidth="665.0" styleClass="game-button" stylesheets="@../style/mainMenuButton.css" text="Tutorial" />
+         <Button fx:id="continueButton" layoutX="138.0" layoutY="498.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#continuePressed" prefHeight="120.0" prefWidth="665.0" styleClass="game-button" stylesheets="@../style/mainMenuButton.css" text="Continue" />
+         <Button fx:id="newGameButton" layoutX="138.0" layoutY="626.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#newGamePressed" prefHeight="120.0" prefWidth="665.0" styleClass="game-button" stylesheets="@../style/mainMenuButton.css" text="New Game" />
+         <Button layoutX="134.0" layoutY="749.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#exit" prefHeight="120.0" prefWidth="665.0" styleClass="game-button" stylesheets="@../style/mainMenuButton.css" text="Exit" />
+         <HBox styleClass="volume-box" stylesheets="@../style/volumeSlider.css" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="40.0">
+            <children>
+               <Label styleClass="volume-label" text="Music" />
+               <Slider fx:id="musicSlider" prefWidth="260.0" styleClass="volume-slider" />
+               <Label fx:id="musicPercentLabel" styleClass="volume-percent" text="70%" />
+            </children>
+         </HBox>
+      <Button layoutX="1619.0" layoutY="65.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showHowToPlay" prefHeight="54.0" prefWidth="243.0" styleClass="game-button" stylesheets="@../style/mainMenuButton.css" text="How To Play" />
+      </children>
+   </AnchorPane>
