@@ -5,3 +5,26 @@
     -fx-background-repeat: no-repeat;
 }
 
+
+/* Credits in the top-right frame of the main menu */
+.credits-box {
+    -fx-background-color: transparent;
+}
+
+.credits-title {
+    -fx-text-fill: #00F5FF;
+    -fx-font-family: "Consolas";
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, #1A0008, 3, 0.8, 0, 0);
+}
+
+.credits-name {
+    -fx-text-fill: #E0F7FA;
+    -fx-font-family: "Consolas";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-effect: dropshadow(gaussian, #1A0008, 3, 0.8, 0, 0);
+}
+
